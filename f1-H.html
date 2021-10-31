@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainbox{
+            position: relative;
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- First image -->
+    <div class="mainbox">
+        <img id="sliding1" src="https://assets.tatacliq.com/medias/sys_master/images/31653739135006.jpg">
+    </div>
+    
+</body>
+</html>
+
+<script>
+    function first() {
+    var image=document.getElementById("sliding1")
+    image.setAttribute("src","https://assets.tatacliq.com/medias/sys_master/images/31655829798942.jpg")
+    }
+
+    function second() {
+    var image=document.getElementById("sliding1")
+    image.setAttribute("src","https://assets.tatacliq.com/medias/sys_master/images/31653739069470.jpg")
+    }
+
+    function third() {
+    var image=document.getElementById("sliding1")
+    image.setAttribute("src","https://assets.tatacliq.com/medias/sys_master/images/31653739003934.jpg")
+    }
+
+    function fourth() {
+    var image=document.getElementById("sliding1")
+    image.setAttribute("src","https://assets.tatacliq.com/medias/sys_master/images/31653739790366.jpg")
+    }
+
+    function fifth() {
+    var image=document.getElementById("sliding1")
+    image.setAttribute("src","https://assets.tatacliq.com/medias/sys_master/images/31653739659294.jpg")
+    }
+
+    function sixth() {
+    var image=document.getElementById("sliding1")
+    image.setAttribute("src","https://assets.tatacliq.com/medias/sys_master/images/31653739135006.jpg")
+    }
+
+    setInterval(first,2000)
+    setInterval(second,4000)
+    setInterval(third,6000)
+    setInterval(fourth,8000)
+    setInterval(fifth,10000)
+    setInterval(sixth,12000)
+</script>
