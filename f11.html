@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10%;
+      }
+
+      #leftimage {
+        width: 40%;
+        height: 250px;
+
+        margin-right: 4%;
+      }
+      #rightimage {
+        width: 40%;
+        height: 250px;
+      }
+      .i img {
+        width: 90%;
+        height: auto;
+        border-radius: 3%;
+        transition: 200ms;
+      }
+
+      .i img:hover {
+        width: 100%;
+        border-radius: 3%;
+        width: 105%;
+        transition: 200ms;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="i" id="leftimage">
+        <img
+          src="https://assets.tatacliq.com/medias/sys_master/images/31655838875678.jpg"
+          alt="puma shoes"
+        />
+      </div>
+      <div class="i" id="rightimage">
+        <img
+          src="https://assets.tatacliq.com/medias/sys_master/images/31653745262622.jpg"
+          alt="girl in blue"
+        />
+      </div>
+    </div>
+  </body>
+</html>
