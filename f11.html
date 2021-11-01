@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,28 +10,37 @@
         padding: 0%;
         margin: 0%;
       }
-      .container {
+      .container1 {
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 10%;
+            width: 80%;
+            height: 410px;
+            justify-content: center;
+            border: 0px solid black;
+            margin: auto;
+           justify-content: space-around;
+            flex-wrap: wrap;
       }
 
       #leftimage {
         width: 40%;
-        height: 250px;
-
-        margin-right: 4%;
+            height: 80%;
+           background-color: green;
+            border-radius: 5px;
       }
       #rightimage {
-        width: 40%;
-        height: 250px;
+         width: 40%;
+            height: 80%;
+            background-color: green;
+            border-radius: 5px;
+            
       }
-      .i img {
-        width: 90%;
-        height: auto;
-        border-radius: 3%;
-        transition: 200ms;
+      .container1 img {
+        width: 100%;
+         height: 100%;
+         max-width: 110%;
+         min-width: 60%;transition: 200ms;
+         border-radius: 3%;
+         
       }
 
       .i img:hover {
@@ -41,10 +49,39 @@
         width: 105%;
         transition: 200ms;
       }
+
+      /* ----------------------------------------------> */
+      /* container-2 */
+      .container2 {
+        display: flex;
+            width: 80%;
+            height: 410px;
+            justify-content: center;
+            border: 0px solid black;
+            margin: auto;
+           justify-content: space-around;
+            flex-wrap: wrap;
+      }
+      .j {
+        width: 20%;
+            height: 80%;
+            background-color: green;
+            border-radius: 5px;
+            margin: auto;
+      }
+     
+      .container2 img {
+        width: 100%;
+         height: 100%;
+         max-width: 100%;
+         min-width: 60%; 
+         transition: 200ms;
+         border-radius: 3%;
+      }
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="container1">
       <div class="i" id="leftimage">
         <img
           src="https://assets.tatacliq.com/medias/sys_master/images/31655838875678.jpg"
@@ -55,6 +92,33 @@
         <img
           src="https://assets.tatacliq.com/medias/sys_master/images/31653745262622.jpg"
           alt="girl in blue"
+        />
+      </div>
+    </div>
+
+    <div class="container2">
+      <div class="j" id="img1">
+        <img
+          src="https://assets.tatacliq.com/medias/sys_master/images/31562214342686.jpg"
+          alt="mixer"
+        />
+      </div>
+      <div class="j" id="img2">
+        <img
+          src="https://assets.tatacliq.com/medias/sys_master/images/31562214408222.jpg"
+          alt="induction"
+        />
+      </div>
+      <div class="j" id="img3">
+        <img
+          src="https://assets.tatacliq.com/medias/sys_master/images/31562214473758.jpg"
+          alt="micro own"
+        />
+      </div>
+      <div class="j" id="img4">
+        <img
+          src="https://assets.tatacliq.com/medias/sys_master/images/31562214539294.jpg"
+          alt="toaster grill"
         />
       </div>
     </div>
