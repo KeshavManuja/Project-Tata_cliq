@@ -2,7 +2,6 @@
   margin: 0px;
 }
 
-
 #signUpBar {
   background-color: #212121;
 
@@ -18,11 +17,14 @@
 }
 #searchBar {
   background-color: #212121;
+  margin-top: 0px;
   display: block;
   width: 100%;
   /* overflow: auto; */
   position: relative;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
+  position: sticky;
+  top: 0px;
 }
 a {
   color: white;
@@ -46,7 +48,7 @@ a {
 #nav2box1 {
   display: inline-block;
   color: white;
-  margin-left: 30px;
+  margin: 0px 30px;
 }
 #nav2box2 {
   margin-top: auto;
@@ -77,4 +79,76 @@ a {
 }
 #nav2Content {
   padding: 0px 30px;
+}
+#dummytext {
+  line-height: 50px;
+  color: white;
+}
+#nav2box1c {
+  margin: 0px;
+  padding: 30px;
+  height: 30px;
+}
+#nav2box1 span {
+  padding: 10px;
+  margin-top: 0px;
+}
+
+.cat:hover {
+  background-color: white;
+  color: black;
+}
+#listCat {
+  margin-top: 10px;
+  position: absolute;
+  color: black;
+  background-color: white;
+  width: fit-content;
+  padding: 0px;
+  display: none;
+}
+#listCat li {
+  list-style: none;
+  border-bottom: 1px solid gray;
+  padding: 20px;
+  margin-left: auto;
+}
+.cat:hover + #listCat,
+#listCat:hover {
+  background-color: white;
+  color: black;
+  display: block;
+}
+#listBrand {
+  margin-top: 10px;
+  position: absolute;
+  background-color: white;
+  color: black;
+  list-style: none;
+  padding: 0px;
+  display: none;
+}
+
+#listBrand li {
+  padding: 20px;
+  border-bottom: 1px solid gray;
+}
+.brand:hover {
+  background-color: white;
+  color: black;
+}
+
+.brand:hover + #listBrand,
+#listBrand:hover {
+  display: block;
+}
+
+#loginList {
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+}
+#loginList li {
+  list-style: none;
+  background-color: white;
 }
