@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+}
+
+
+#signUpBar {
+  background-color: #212121;
+
+  height: fit-content;
+  overflow: auto;
+}
+#nav1 {
+  background-color: black;
+  width: 83%;
+  float: right;
+  height: 30px;
+  line-height: 30px;
+}
+#searchBar {
+  background-color: #212121;
+  display: block;
+  width: 100%;
+  /* overflow: auto; */
+  position: relative;
+  padding-bottom: 10px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 20px;
+}
+#luxury,
+#box1 {
+  display: inline-block;
+}
+#box1 {
+  float: right;
+}
+#logo img {
+  width: 70px;
+}
+#logo {
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
+}
+#nav2box1 {
+  display: inline-block;
+  color: white;
+  margin-left: 30px;
+}
+#nav2box2 {
+  margin-top: auto;
+  color: white;
+
+  /* display: inline-block; */
+  /* float: right; */
+  /* float: inline-end; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px 0px;
+}
+#nav2box {
+  margin: 0px 0px;
+}
+#search {
+  display: inline-block;
+  background-color: #212121;
+  border-bottom: 1px solid white;
+}
+#search input {
+  background-color: #212121;
+  border: none;
+}
+#icon {
+  display: inline-block;
+}
+#nav2Content {
+  padding: 0px 30px;
+}
