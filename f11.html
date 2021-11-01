@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+      .container1 {
+        display: flex;
+        width: 80%;
+        height: 410px;
+        justify-content: center;
+        border: 0px solid black;
+        margin: auto;
+        margin-top: 5%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      #leftimage {
+        width: 40%;
+        height: 80%;
+        background-color: green;
+        border-radius: 5px;
+      }
+      #rightimage {
+        width: 40%;
+        height: 80%;
+        background-color: green;
+        border-radius: 5px;
+      }
+      .container1 img {
+        width: 100%;
+        height: 100%;
+        max-width: 110%;
+        min-width: 60%;
+        transition: 200ms;
+        border-radius: 3%;
+      }
+
+      .i img:hover {
+        width: 100%;
+        border-radius: 3%;
+        width: 105%;
+        transition: 200ms;
+      }
+
+      /* ----------------------------------------------> */
+      /* container-2 */
+      .container2 {
+        display: flex;
+        width: 80%;
+        height: 410px;
+        justify-content: center;
+        border: 0px solid black;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .j {
+        width: 20%;
+        height: 80%;
+        background-color: green;
+        border-radius: 5px;
+        margin: auto;
+      }
+
+      .container2 img {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        min-width: 60%;
+        transition: 200ms;
+        border-radius: 3%;
+      }
+      .container2 img:hover {
+        width: 110%;
+        height: 110%;
+        transition: 300ms;
+        border-radius: 4%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="i" id="leftimage">
+        <img
+          src="https://assets.tatacliq.com/medias/sys_master/images/31655838875678.jpg"
+          alt="puma shoes"
+        />
+      </div>
+      <div class="i" id="rightimage">
+        <img
+          src="https://assets.tatacliq.com/medias/sys_master/images/31653745262622.jpg"
+          alt="girl in blue"
+        />
+      </div>
+    </div>
+
+    <div class="container2">
+      <div class="j" id="img1">
+        <img
+          src="https://assets.tatacliq.com/medias/sys_master/images/31562214342686.jpg"
+          alt="mixer"
+        />
+      </div>
+      <div class="j" id="img2">
+        <img
+          src="https://assets.tatacliq.com/medias/sys_master/images/31562214408222.jpg"
+          alt="induction"
+        />
+      </div>
+      <div class="j" id="img3">
+        <img
+          src="https://assets.tatacliq.com/medias/sys_master/images/31562214473758.jpg"
+          alt="micro own"
+        />
+      </div>
+      <div class="j" id="img4">
+        <img
+          src="https://assets.tatacliq.com/medias/sys_master/images/31562214539294.jpg"
+          alt="toaster grill"
+        />
+      </div>
+    </div>
+  </body>
+</html>
