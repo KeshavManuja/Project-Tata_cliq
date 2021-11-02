@@ -5,8 +5,8 @@
 #signUpBar {
   background-color: #212121;
 
-  height: fit-content;
-  overflow: auto;
+  height: 30px;
+  /* overflow: auto; */
 }
 #nav1 {
   background-color: black;
@@ -36,7 +36,9 @@ a {
   display: inline-block;
 }
 #box1 {
+  display: flex;
   float: right;
+  margin-right: 10px;
 }
 #logo img {
   width: 70px;
@@ -144,11 +146,56 @@ a {
 }
 
 #loginList {
+  margin-top: 40px;
   background-color: white;
-  position: absolute;
+  /* position: absolute; */
+  padding: 10px;
+  /* margin-left: 405px; */
   z-index: 1;
+  /* display: none; */
 }
 #loginList li {
   list-style: none;
   background-color: white;
+  padding: 5px;
+}
+
+#loginList button {
+  background-color: #ff1744;
+  padding: 10px 25px;
+  border-radius: 25px;
+  color: white;
+  border: none;
+}
+.fal {
+  margin-right: 10px;
+}
+#arrow {
+  margin-top: 33px;
+  background-color: white;
+  content: "   ";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  z-index: 2;
+  border: none;
+  margin-left: 130px;
+  transform: rotate(225deg);
+  /* display: none; */
+}
+
+#boxhov {
+  margin-top: 5px;
+
+  position: absolute;
+  margin-left: 405px;
+  z-index: 1;
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#dummy:hover + #boxhov,
+#boxhov:hover {
+  display: block;
 }
