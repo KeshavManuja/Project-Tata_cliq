@@ -26,7 +26,7 @@
   position: sticky;
   top: 0px;
 }
-a {
+#nav1 a {
   color: white;
   text-decoration: none;
   padding: 0px 20px;
@@ -48,9 +48,10 @@ a {
   padding: 10px 40px 10px 40px;
 }
 #nav2box1 {
-  display: inline-block;
+  display: flex;
+
   color: white;
-  margin: 0px 30px;
+  margin: ;
 }
 #nav2box2 {
   margin-top: auto;
@@ -88,62 +89,23 @@ a {
 }
 #nav2box1c {
   margin: 0px;
-  padding: 30px;
-  height: 30px;
+  /* padding: 30px 0px; */
+  /* height: 30px; */
 }
 #nav2box1 span {
   padding: 10px;
-  margin-top: 0px;
+  margin-top: 15px;
 }
 
-.cat:hover {
-  background-color: white;
-  color: black;
-}
-#listCat {
-  margin-top: 10px;
-  position: absolute;
-  color: black;
-  background-color: white;
-  width: fit-content;
-  padding: 0px;
-  display: none;
-}
-#listCat li {
-  list-style: none;
-  border-bottom: 1px solid gray;
-  padding: 20px;
-  margin-left: auto;
-}
-.cat:hover + #listCat,
-#listCat:hover {
-  background-color: white;
-  color: black;
-  display: block;
-}
-#listBrand {
-  margin-top: 10px;
-  position: absolute;
-  background-color: white;
-  color: black;
-  list-style: none;
-  padding: 0px;
-  display: none;
-}
-
-#listBrand li {
-  padding: 20px;
-  border-bottom: 1px solid gray;
-}
 .brand:hover {
   background-color: white;
   color: black;
 }
 
-.brand:hover + #listBrand,
+/* .brand:hover + #listBrand,
 #listBrand:hover {
   display: block;
-}
+} */
 
 #loginList {
   margin-top: 40px;
@@ -198,4 +160,123 @@ a {
 #dummy:hover + #boxhov,
 #boxhov:hover {
   display: block;
+}
+
+#blockshow {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  margin-left: 150px;
+  display: none;
+  position: sticky;
+  top: 63px;
+  z-index: 3;
+  width: fit-content;
+  height: 485px;
+}
+
+#brandTable tr td a,
+#brandTable tr td {
+  color: gray;
+  padding: 5px 5px;
+  margin-right: 40px;
+  text-decoration: none;
+  width: 250px;
+}
+
+#brandTable tr th,
+#brandTable tr th a {
+  color: black;
+  padding: 5px 5px;
+  margin-right: 40px;
+  text-decoration: none;
+  width: 250px;
+  text-align: left;
+}
+#brandTable tr td a:hover {
+  color: #ff1744;
+}
+
+#blockshow #listBrand li {
+  padding: 19px;
+  list-style: none;
+  border-bottom: 1px solid gray;
+}
+#listBrand li {
+  color: gray;
+  font-weight: bold;
+}
+#listBrand li:hover {
+  color: black;
+}
+
+#blockshow #listBrand {
+  list-style: none;
+  padding-left: 0px;
+}
+#imgList img {
+  margin: 20px;
+
+  border-radius: 50%;
+}
+#imgList {
+  background-color: whitesmoke;
+  width: fit-content;
+}
+
+/* #blockshowCat {
+  position: absolute;
+  border: 2px solid red;
+} */
+
+#blockshowCat {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  margin-left: 150px;
+  display: none;
+  position: sticky;
+  top: 63px;
+  z-index: 3;
+  width: fit-content;
+  height: 485px;
+}
+
+#listCat li {
+  padding: 19px;
+  list-style: none;
+  width: 150px;
+  border-bottom: 1px solid gray;
+  color: gray;
+  font-weight: bold;
+}
+#listCat li:hover {
+  color: black;
+}
+#listCat {
+  padding-left: 0px;
+}
+#cateTable {
+  margin-left: 30px;
+  width: 800px;
+}
+#cateTable tr td a {
+  text-decoration: none;
+  color: gray;
+  margin-right: 30px;
+}
+#cateTable tr td {
+  padding: 5px;
+  width: 200px;
+}
+
+#cateTable tr td a:hover {
+  color: #ff1744;
+}
+
+#nav2box1 #farc,
+#farb {
+  margin-left: 5px;
+  font-size: 25px;
+  animation-delay: 250m;
 }

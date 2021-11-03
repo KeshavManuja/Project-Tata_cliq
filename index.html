@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online shoppoing</title>
+    <title>Online Shopping</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -17,7 +17,7 @@
         <div id="nav1">
             <div id="luxury"><a href="#">Tata CLiQ Luxury</a></div>
             <div id="box1">
-                <a href="#" id="dummy">CLiQ Cash</a></li>
+                <a href="#" id="">CLiQ Cash</a></li>
                 <a href="#">Gift Card</a></li>
                 <a href="#">CLiQ Care</a></li>
                 <a href="#">Track Orders</a></li>
@@ -44,33 +44,17 @@
 
 
     <div id="searchBar">
-        <div id="logo"><img src="logo.png" alt=""></div>
+
         <div id="nav2box1">
-            <span id="nav2box1c" class="cat">Categories <i class="far fa-angle-down"></i></span>
-            <ul id="listCat">
-                <li>Women's Fashion</li>
+            <div id="logo"><img src="logo.png" alt=""></div>
+            <span id="nav2box1c" class="cat">Categories <i class="far fa-angle-down" id="farc"></i></span>
 
-                <li>Men's Fashion</li>
-                <li>TV & Appliances</li>
-                <li>Mobile Phones</li>
-                <li>Electronics</li>
-                <li>Kid's Fashion</li>
-                <li>Beauty</li>
-                <li>Home Furnishings</li>
-            </ul>
 
-            <span id="nav2box1c" class="brand">Brands <i class="far fa-angle-down"></i></span>
-            <ul id="listBrand">
-                <li>TV & Appliances</li>
 
-                <li>Electronics</li>
-                <li>Women's Wear</li>
-                <li>Men's Wear</li>
-                <li>Footwear</li>
-                <li>Jewellery</li>
-                <li>Watches & Accessories</li>
-                <li>Kids</li>
-            </ul>
+
+
+            <span id="nav2box1c" class="brand">Brands <i class="far fa-angle-down" id="farb"></i></span>
+
         </div>
         <div id="nav2box2">
             <div id="search"><input type="text" placeholder="Search"><i class="far fa-search"></i></div>
@@ -79,6 +63,51 @@
             </div>
         </div>
 
+    </div>
+
+    <div id="blockshowCat">
+        <ul id="listCat">
+
+            <li id="navWomen">Women's Fashion</li>
+            <li id="navMen">Men's Fashion</li>
+            <li id="navTv">TV & Appliances</li>
+            <li id="navMobile">Mobile Phones</li>
+            <li id="navElectronics">Electronics</li>
+            <li id="navKid">Kid's Fashion</li>
+            <li id="navBeauty">Beauty</li>
+            <li id="navHome">Home Furnishings</li>
+        </ul>
+
+        <div>
+            <table id="cateTable"></table>
+        </div>
+    </div>
+
+
+
+    <div id="blockshow">
+        <ul id="listBrand">
+            <li id="brandTv">TV & Appliances</li>
+            <li id="brandElc">Electronics</li>
+            <li id="brandWomen">Women's Wear</li>
+            <li id="brandMen">Men's Wear</li>
+            <li id="brandFoot">Footwear</li>
+            <li id="brandJwel">Jewellery</li>
+            <li id="brandJwel">Watches & Accessories</li>
+            <li id="brandKid">Kids</li>
+        </ul>
+        <div>
+            <table id="brandTable"></table>
+        </div>
+        <div id="imgList">
+            <div><img src="https://assets.tatacliq.com/medias/sys_master/images/13957513642014.jpg" alt=""><img
+                    src="https://assets.tatacliq.com/medias/sys_master/images/13957513838622.jpg" alt=""></div>
+            <div><img src="https://assets.tatacliq.com/medias/sys_master/images/26728706506782.jpg" alt=""><img
+                    src="https://assets.tatacliq.com/medias/sys_master/images/13957513838622.jpg" alt=""></div>
+            <div><img src="https://assets.tatacliq.com/medias/sys_master/images/13957513773086.jpg" alt=""><img
+                    src="https://assets.tatacliq.com/medias/sys_master/images/13957513838622.jpg" alt=""></div>
+
+        </div>
     </div>
 
     <div id="dummytext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minus ipsam alias nam temporibus
@@ -157,5 +186,10 @@
         perferendis odio quae alias illum
         aspernatur, facere eveniet error enim sint fugiat porro veritatis quidem cupiditate cum vel totam.</div>
 </body>
+<a href=""></a>
 
 </html>
+
+
+<script src="nav.js"></script>
+<script src="brand.js"></script>
