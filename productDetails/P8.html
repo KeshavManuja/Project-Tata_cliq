@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      #container {
+        width: 80%;
+        max-height: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: aqua; */
+        display: flex;
+        flex-wrap: wrap;
+        
+        margin: auto;
+        margin-top: 2%;
+      }
+      #leftbox {
+        width: 48%;
+        height: 800px;
+        /* background-color: teal; */
+        margin-left:2%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* -------------rightbox */
+      #rightbox {
+        width: 48%;
+        height: 800px;
+        /* background-color: teal; */
+      }
+      
+      .innerbox {
+        width: 85%;
+       height: 92%;
+        /* border: 1px solid; */
+        margin: 6% 6% 6%;
+      }
+      #brandname h3 {
+        color: rgb(0, 0, 0);
+        margin-bottom: 1%;
+        font-weight: bolder;
+        font-size: 23px;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Slab", serif;
+      }
+      #brandname p {
+        font-size: 25px;
+        font-family: "Zen Kaku Gothic Antique", sans-serif;
+        color: rgba(0, 0, 0, 0.932);
+      }
+      #rightbox #a{
+          display: inline-block;
+          margin-right: 65%;
+        }
+      /* price section */
+      #price {
+        /* border: 1px solid; */
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+      }
+      #price #realprice {
+        padding: 1%;
+        font-size: 20px;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-decoration: line-through;
+        color: rgb(128, 121, 123);
+      }
+      #price #OFF {
+        padding: 1%;
+        font-size: 22px;
+        color: rgb(2, 194, 2);
+      }
+      #taxes {
+        /* border: 1px solid; */
+        color: rgb(128, 121, 123);
+        font-size: 22px;
+      }
+      #shipping {
+        /* border: 1px solid; */
+        color: rgb(255, 12, 96);
+        font-size: 20px;
+        margin-top: 1%;
+      }
+
+      /* rating &star */
+      #rating {
+        
+        display: flex;
+      }
+      #rating #star {
+        background-color: green;
+        
+        height: 25px;
+        border: 0.1px solid;
+      }
+      #star {
+        color: white;
+        font-size: 20px;
+      }
+      .num {
+        font-weight: bolder;
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+      .R {
+        
+        color: rgb(128, 121, 123);
+        font-size: 19px;
+      }
+      #rightbox li {
+        margin-top: 20px;
+        color: rgb(97, 100, 97);
+        font-size: 15px;
+      }
+      #rightbox h5 {
+        margin-top: 3%;
+        font-size: 17px;
+      }
+
+      /* size */
+      #allbtn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:start;
+        margin-top: 2%;
+      }
+      #allbtn button{
+        width: 80px;
+        height: 30px;
+        margin-right: 6px;
+        border-radius: 15px;
+        font-weight: bolder;
+       cursor: pointer;
+      }
+      #similar{
+        display: flex;
+        margin-top: 4%;
+      }
+     
+      #similar a{
+        margin-left:5% ;
+        color:rgb(255, 12, 96);
+        font-weight: bolder; 
+      }
+
+      /* color */
+      #color {
+        margin-top:7%;
+      }
+      #color label{
+        font-size: 17px;
+        font-weight: bold;
+      }
+      #circle{
+        display: flex;
+        margin-top: 3%;
+       }
+      #circle button{
+        width: 32px;
+        height: 32px;
+        margin-right: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+       }
+       #color #red{
+         background-color: red;
+       }
+      
+       #color #blue{
+         background-color: blue;
+       }
+       #color #black{
+         background-color: black;
+       }
+       /* buy & cart */
+       #lastbox{
+            display: flex;
+            height: 130px;
+           
+            margin-top: 20px;
+            justify-content:center;
+            
+          }
+          #lastbox #buy{
+            width: 40%;
+            color: white;
+            background-color:rgb(255, 12, 96); 
+            margin-right: 4%;
+            margin-left: -43px;
+            margin-top: 4%;
+            height: 45px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+          }
+
+            #lastbox #buy:hover{
+           
+              box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+              font-size: 15px;
+            }
+      
+          #lastbox #cart{
+            width: 40%;
+            border: 1px solid rgb(255, 12, 96);
+            margin-right: 4%;
+            margin-left: 2%;
+            margin-top: 4%;
+            height: 45px;
+           border-radius: 50px;
+           cursor: pointer;
+           font-weight: bold;
+           }
+           #lastbox #cart:hover{
+           
+           box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+           font-size: 15px;
+         }
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="leftbox">
+        <div class="innerbox">
+          <img
+            src="https://img.tatacliq.com/images/i7/437Wx649H/MP000000009068813_437Wx649H_202103132243151.jpeg"
+            alt="shoes1"
+          />
+        </div>
+      </div>
+      <!-- <<<<----------------------------------->
+      <div id="rightbox">
+        <div class="innerbox">
+          <div id="brandname">
+            <h3 id="a">ID</h3>
+            <div class="fa fa-heart" onclick="fav()" ></div>
+            <p>ID Men's Charcoal Black Casual Boots</p>
+          </div>
+          <!-- price section -->
+          <div id="price">
+            <h1>₹1874</h1>
+            <p id="realprice">MRP.11999</p>
+            <p id="OFF">(66% OFF)</p>
+          </div>
+          <p id="taxes">inclusive of all taxes</p>
+          <p id="shipping">Free Shipping till 2nd Nov</p>
+
+          <!-- rating section -->
+          <div id="rating">
+            <div id="star">4.2 <span class="fa fa-star checked"></span></div>
+            <h3 class="num">70</h3>
+            <p class="R">Rating &</p>
+            <h3 class="num">5</h3>
+            <p class="R">Reviews</p>
+          </div>
+
+          <li>
+            10% Instant Discount on Axis Bank CC, DC & CCEMI | Min. Purchase:
+            Rs.3000 | Max Discount: Rs.3000
+          </li>
+
+          <!-- size section -->
+          <h5>Select Size</h5>
+          <div id="allbtn">
+            <a href="#"><button>UK/IND-6</button></a>
+            <a href="#"><button>UK/IND-7</button></a>
+            <a href="#"><button>UK/IND-8</button></a>
+            <a href="#"><button>UK/IND-9</button></a>
+            <a href="#"><button>UK/IND-10</button></a>
+          </div>
+
+            <div id="similar">
+            <div class="sizeout">Size out of stock?</div>
+            <a href="#"> <div class="similar">View Similar</div> </a>
+          </div>
+
+          <!-- color -->
+        <div id="color">
+         <label>Color:</label>
+        
+
+         <div id="circle">
+          <a href="#"><button id="red"></button></a>
+           <a href="#"><button  id="blue"></button></a>
+           <a href="#"><button id="black"></button></a>
+         </div>
+        </div>
+             
+        <!-- buynow -->
+
+        <style>
+         
+         
+        </style>
+        <div id="lastbox">
+          <button id="buy"  onclick="buy()">Buy Now</button>
+          <button id="cart"  onclick="cart()">Add To cart</button>
+        
+
+        </div>
+
+
+
+</div>
+    </div>
+  </body>
+</html>
+<script>
+  document.getElementById("btn1").addEventListener("click",enterMouse1);
+function enterMouse1(){
+ document.getElementById("btn1").style.backgroundColor="black";
+   document.getElementById("btn1").style.color="white";
+  }3
+  document.getElementById("btn2").addEventListener("click",enterMouse2);
+  function enterMouse2(){
+   document.getElementById("btn2").style.backgroundColor = "black";
+   document.getElementById("btn2").style.color= "white";
+  }
+  document.getElementById("btn3").addEventListener("click",enterMouse3);
+  function enterMouse3(){
+   document.getElementById("btn3").style.backgroundColor = "black";
+   document.getElementById("btn3").style.color= "white";
+  }
+  document.getElementById("btn4").addEventListener("click",enterMouse4);
+  function enterMouse4(){
+   document.getElementById("btn4").style.backgroundColor = "black";
+   document.getElementById("btn4").style.color= "white";
+  }
+  document.getElementById("btn5").addEventListener("click",enterMouse5);
+  function enterMouse5(){
+   document.getElementById("btn5").style.backgroundColor = "black";
+   document.getElementById("btn5").style.color= "white";
+
+  }
+  
+ //  fav button-------------->>
+
+           function fav(){
+         var fav =JSON.parse(localStorage.getItem("favItems")) || [];
+
+         
+         document.addEventListener("click",addtoFav)
+           function addtoFav(item){
+        fav.push(item);
+        localStorage.setItem("favItems",JSON.stringify(fav))
+    }
+   } 
+   document.getElementById("fav").addEventListener("click",function(){
+     window.location.href="fav1.html"
+ })
+
+ document.querySelector("body").append(button1)
+         
+        
+       
+      
+  
+</script>
+
+ 
+    
