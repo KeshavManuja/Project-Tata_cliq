@@ -24,7 +24,7 @@ var categoriesArray=[
       '<tr>  <td><a href="#">Running Shoes</a></td>  <td><a href="#">Casual Jackets</a></td>  <td><a href="#">Partywear Watches</a></td>  <td><a href="#">Belts</a></td>   </tr>',
       '<tr>  <td><a href="#">Training Shoes</a></td>  <td><a href="#">Formal Shirts</a></td>  <td><a href="#">Digital watches</a></td>  <td><a href="#">Hats & Caps</a></td>   </tr>',
       '<tr>  <td><a href="#">Sports Shoes</a></td>  <td><a href="#">Formal Trousers</a></td>  <td><a href="#">Multifunctional watches</a></td>  <td><a href="#">Ties & Cufflinks</a></td>   </tr>',
-      '<tr>  <td><a href="#">Boots</a></td>  <td><a href="#">Inner & Nightwear</a></td>  <td><a href="#">The Watch Store</a></td>  <td><a href="#">Writing Instruments</a></td>   </tr>',
+      '<tr>  <td><a href="https://www.tatacliq.com/kurtis-&-kurtas/c-msh1012100?&icid2=catd:nav:regu:wnav:m1012100:mulb:bst:01:R1">Boots</a></td>  <td><a href="#">Inner & Nightwear</a></td>  <td><a href="#">The Watch Store</a></td>  <td><a href="#">Writing Instruments</a></td>   </tr>',
       `<tr>  <td><a href="#">Flip Flop</a></td>  <td><a href="#">View All Clothing</a></td>  <td><a href="#">Bags & Backpacks</a></td>  <td><a href="#">Men's Gift Sets</a></td>   </tr>`,
       '<tr>  <td><a href="#">Ethnic Wear</a></td>  <td><a href="#">Sports Wear</a></td>  <td><a href="#">Backpacks</a></td>  <td><a href="#">Jewellery</a></td>   </tr>',
       '<tr>  <td><a href="#">Kurta</a></td>  <td><a href="#">T-shirts & Jerseys</a></td>  <td><a href="#">Wallets</a></td>  <td><a href="#">Mens Jewellery</a></td>   </tr>',
@@ -102,7 +102,7 @@ var categoriesArray=[
       '<tr>  <td><a href="#">Girls Clothing</a></td>  <td><a href="#">Infants</a></td>  <td><a href="#">Boys Footwear</a></td>  <td><a href="#"></a></td>   </tr>'
     ],
     [
-      '<tr>  <td><a href="#"> Fragrance Store</a></td>  <td><a href="#"> Skin</a></td>  <td><a href="#"> Hair Oils</a></td>   </tr>',
+      '<tr>  <th><a href="#"> Fragrance Store</a></th>  <td><a href="#"> Skin</a></td>  <td><a href="#"> Hair Oils</a></td>   </tr>',
       '<tr>  <td><a href="#"> Men</a></td>  <td><a href="#"> Cleansers</a></td>  <td><a href="#"> Hair Masks</a></td>   </tr>',
       '<tr>  <td><a href="#"> Women</a></td>  <td><a href="#"> Moisturizers & Serums</a></td>  <td><a href="#"> Professional Hair care</a></td>   </tr>',
       '<tr>  <td><a href="#"> Perfumes</a></td>  <td><a href="#"> Facial Peels & Masks</a></td>  <td><a href="#"> Natural Hair care</a></td>   </tr>',
@@ -145,33 +145,72 @@ var categoriesArray=[
   var navKid =document.getElementById("navKid")
   var navBea =document.getElementById("navBeauty")
   var navHome =document.getElementById("navHome")
+  var displayArrow=0;
+  var discatarr=["navCat1","navCat2", "navCat3", "navCat4", "navCat5", "navCat6", "navCat7", "navCat8"]
+  var discatarr2=["navWomen","navMen", "navTv", "navMobile", "navElectronics", "navKid", "navBeauty", "navHome"]
+  function arrowdis(displayArrow ){
+      for(var d=0; d<8; d++)
+      {
+        if(displayArrow==d){
+            var distemp=document.getElementById(discatarr[d])
+            distemp.style.display="block"
+          var distemp1=document.getElementById(discatarr2[d])
+          distemp1.style.color="black"
 
+        }
+        else{
+          var distemp=document.getElementById(discatarr[d])
+            distemp.style.display="none"
+            var distemp1=document.getElementById(discatarr2[d])
+          distemp1.style.color="gray"
+            
+        }
+      }
+  }
 
   var cateTable=document.querySelector("#cateTable")
+  
 
   navWomen.onmouseover=function(){
       cateTable.innerHTML=categoriesArray[0].join('')
+      displayArrow=0;
+      arrowdis(displayArrow)
   }
   navMen.onmouseover=function(){
       cateTable.innerHTML=categoriesArray[1].join('')
+      displayArrow=1;
+     
+      arrowdis(displayArrow)
   } 
   navTv.onmouseover=function(){
       cateTable.innerHTML=categoriesArray[2].join('')
+      displayArrow=2;
+      arrowdis(displayArrow)
   } 
   navMobile.onmouseover=function(){
       cateTable.innerHTML=categoriesArray[3].join('')
+      displayArrow=3;
+      arrowdis(displayArrow)
   } 
   navElectronics.onmouseover=function(){
       cateTable.innerHTML=categoriesArray[4].join('')
+      displayArrow=4;
+      arrowdis(displayArrow)
   } 
   navKid.onmouseover=function(){
       cateTable.innerHTML=categoriesArray[5].join('')
+      displayArrow=5;
+      arrowdis(displayArrow)
   } 
   navBea.onmouseover=function(){
       cateTable.innerHTML=categoriesArray[6].join('')
+      displayArrow=6;
+      arrowdis(displayArrow)
   } 
   navHome.onmouseover=function(){
       cateTable.innerHTML=categoriesArray[7].join('')
+      displayArrow=7;
+      arrowdis(displayArrow)
   }
 
   var blockshowCat=document.getElementById("blockshowCat")
@@ -185,6 +224,8 @@ var categoriesArray=[
       cate.style.backgroundColor="white"
       var aroiconc=document.querySelector("#farc")
     aroiconc.style.transform="rotate(180deg)"
+    displayArrow=0;
+    arrowdis(displayArrow)
     
   }
   cate.onmouseout=function(){
@@ -213,4 +254,31 @@ blockshowCat.onmouseout=function(){
     aroiconc.style.transform="rotate(0deg)"
   
 }
+
+
+
+
+var searchBar =document.getElementById("search")
+searchBar.addEventListener("click", changeSearch)
+var btxxn='<button onclick="crosSearch()" id="times"><i class="fal fa-times id="times"></i></button>'
+var intext='<input type="text" placeholder="" id="onEffet">'+btxxn
+
+function changeSearch(){
+  searchBar.innerHTML=intext
+ 
+}
+
+
+
+
+function crosSearch(){
+
+  intext='<input type="text" placeholder="Search" id="beforeEfc"><i class="far fa-search"></i>'
+  
+ }
+
+
+
+
+
 

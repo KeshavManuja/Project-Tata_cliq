@@ -144,6 +144,8 @@ var brandArray=[
      navBrand.style.backgroundColor="white"
      var aroicon=document.querySelector("#farb")
     aroicon.style.transform="rotate(180deg)"
+    brandArrow=0;
+    arrowbrand(brandArrow)
  }
 
  navBrand.onmouseout=function(){
@@ -186,31 +188,75 @@ var brandWomen=document.getElementById("brandWomen")
 var brandMen=document.getElementById("brandMen")
 var brandFoot=document.getElementById("brandFoot")
 var brandJwel=document.getElementById("brandJwel")
-var brandJwel=document.getElementById("brandJwel")
+var brandwatch=document.getElementById("brandwatch")
+
 var brandKid=document.getElementById("brandKid")
+
+var brandArrow=100;
+var disBrandarr=["navbrn1","navbrn2", "navbrn3", "navbrn4", "navbrn5", "navbrn6", "navbrn7", "navbrn8"]
+var disBrandarr2=["brandTv", "brandElc", "brandWomen", "brandMen", "brandFoot", "brandJwel","brandwatch", "brandKid"]
+
+function arrowbrand(brandArrow ){
+  for(var b=0; b<8; b++)
+  {
+    if(brandArrow==b){
+        var brantemp=document.getElementById(disBrandarr[b])
+        brantemp.style.display="block"
+      var distemp1=document.getElementById(disBrandarr2[b])
+      distemp1.style.color="black"
+
+    }
+    else{
+      var brantemp=document.getElementById(disBrandarr[b])
+        brantemp.style.display="none"
+        var distemp1=document.getElementById(disBrandarr2[b])
+      distemp1.style.color="gray"
+        
+    }
+  }
+}
+
+
 
 
  brandTv.onmouseover=function(){
      table.innerHTML=brandArray[0].join('')
+     brandArrow=0;
+    arrowbrand(brandArrow)
  }
  brandElc.onmouseover=function(){
      table.innerHTML=brandArray[1].join('')
+     brandArrow=1;
+    arrowbrand(brandArrow)
+
  }
  brandWomen.onmouseover=function(){
      table.innerHTML=brandArray[2].join('')
+     brandArrow=2;
+     arrowbrand(brandArrow)
  }
  brandMen.onmouseover=function(){
      table.innerHTML=brandArray[3].join('')
+     brandArrow=3;
+     arrowbrand(brandArrow)
  }
  brandFoot.onmouseover=function(){
      table.innerHTML=brandArray[4].join('')
+     brandArrow=4;
+     arrowbrand(brandArrow)
  }
  brandJwel.onmouseover=function(){
      table.innerHTML=brandArray[5].join('')
+     brandArrow=5;
+     arrowbrand(brandArrow)
  }
- brandJwel.onmouseover=function(){
+ brandwatch.onmouseover=function(){
      table.innerHTML=brandArray[6].join('')
+     brandArrow=6;
+     arrowbrand(brandArrow)
  }
  brandKid.onmouseover=function(){
      table.innerHTML=brandArray[7].join('')
+     brandArrow=7;
+     arrowbrand(brandArrow)
  }

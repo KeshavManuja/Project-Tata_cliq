@@ -56,33 +56,51 @@
 #nav2box2 {
   margin-top: auto;
   color: white;
-
-  /* display: inline-block; */
-  /* float: right; */
-  /* float: inline-end; */
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 20px 0px;
 }
 #nav2box {
   margin: 0px 0px;
 }
 #search {
   display: inline-block;
+  margin-top: 20px;
   background-color: #212121;
+  /* background-color: white; */
   border-bottom: 1px solid white;
+  /* margin-bottom: 0;
+  padding-bottom: 0; */
 }
-#search input {
+#search #beforeEfc {
   background-color: #212121;
   border: none;
+
+  /* height: 50px; */
+  /* width: 500px; */
+}
+#search #onEffet {
+  background-color: #212121;
+  border: none;
+  background-color: white;
+  height: 50px;
+  width: 500px;
+}
+#times {
+  background-color: white;
+}
+
+.fa-bookmark,
+.fa-briefcase {
+  margin: 20px 30px;
 }
 #icon {
-  display: inline-block;
+  /* display: inline-block; */
+  float: right;
 }
-#nav2Content {
+/* #nav2Content {
   padding: 0px 30px;
-}
+ }  */
 #dummytext {
   line-height: 50px;
   color: white;
@@ -129,9 +147,7 @@
   color: white;
   border: none;
 }
-.fal {
-  margin-right: 10px;
-}
+
 #arrow {
   margin-top: 33px;
   background-color: white;
@@ -174,6 +190,9 @@
   width: fit-content;
   height: 485px;
 }
+#brandTable {
+  margin-left: 25px;
+}
 
 #brandTable tr td a,
 #brandTable tr td {
@@ -188,7 +207,7 @@
 #brandTable tr th a {
   color: black;
   padding: 5px 5px;
-  margin-right: 40px;
+  /* margin-right: 4px; */
   text-decoration: none;
   width: 250px;
   text-align: left;
@@ -198,8 +217,9 @@
 }
 
 #blockshow #listBrand li {
-  padding: 19px;
+  padding: 19px 0px 19px 19px;
   list-style: none;
+  width: 200px;
   border-bottom: 1px solid gray;
 }
 #listBrand li {
@@ -243,9 +263,9 @@
 }
 
 #listCat li {
-  padding: 19px;
+  padding: 19px 0px 19px 19px;
   list-style: none;
-  width: 150px;
+  width: 200px;
   border-bottom: 1px solid gray;
   color: gray;
   font-weight: bold;
@@ -258,7 +278,7 @@
 }
 #cateTable {
   margin-left: 30px;
-  width: 800px;
+  width: 816px;
 }
 #cateTable tr td a {
   text-decoration: none;
@@ -278,5 +298,22 @@
 #farb {
   margin-left: 5px;
   font-size: 25px;
-  animation-delay: 250m;
+}
+
+span .fa-angle-right {
+  float: right;
+  display: none;
+  font-size: 20px;
+}
+
+#times {
+  background-color: #fff;
+  height: 52px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: black;
+  padding: 0px 15px;
+  vertical-align: bottom;
 }
