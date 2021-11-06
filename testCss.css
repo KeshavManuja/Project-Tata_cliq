@@ -21,6 +21,7 @@
   display: block;
   width: 100%;
   /* overflow: auto; */
+
   position: relative;
   /* padding-bottom: 10px; */
   position: sticky;
@@ -70,7 +71,7 @@
   /* background-color: white; */
   border-bottom: 1px solid white;
   /* margin-bottom: 0;
-  padding-bottom: 0; */
+    padding-bottom: 0; */
 }
 #search #beforeEfc {
   background-color: #212121;
@@ -98,8 +99,8 @@
   float: right;
 }
 /* #nav2Content {
-  padding: 0px 30px;
- }  */
+    padding: 0px 30px;
+   }  */
 #dummytext {
   line-height: 50px;
   /* color: white; */
@@ -119,18 +120,18 @@
   color: black;
 }
 
-/* .brand:hover + #listBrand,
+.brand:hover + #listBrand,
 #listBrand:hover {
   display: block;
-} */
+}
 
 #loginList {
   margin-top: 40px;
   background-color: white;
-  /* position: absolute; */
+  position: absolute;
   padding: 10px;
   /* margin-left: 405px; */
-  z-index: 1;
+  z-index: 3;
   /* display: none; */
 }
 #loginList li {
@@ -155,7 +156,7 @@
   width: 15px;
   height: 15px;
   box-sizing: border-box;
-  z-index: 2;
+  z-index: 3;
   border: none;
   margin-left: 130px;
   transform: rotate(225deg);
@@ -163,11 +164,11 @@
 }
 
 #boxhov {
-  margin-top: 5px;
-
+  margin-top: -10px;
+  /* padding: 50px; */
   position: absolute;
   margin-left: 405px;
-  z-index: 1;
+  z-index: 3;
   display: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -183,9 +184,11 @@
   position: absolute;
   margin-left: 150px;
   display: none;
-  position: sticky;
-  top: 63px;
-  /* z-index: 1; */
+  /* position: sticky; */
+  top: 95px;
+  z-index: 1;
+
+  background-color: white;
   width: fit-content;
   height: 485px;
 }
@@ -243,19 +246,15 @@
   width: fit-content;
 }
 
-/* #blockshowCat {
-  position: absolute;
-  border: 2px solid red;
-} */
-
 #blockshowCat {
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: absolute;
   margin-left: 150px;
   display: none;
-  position: sticky;
-  top: 63px;
+  background-color: white;
+  top: 95px;
+  /* background-color: #fff; */
   z-index: 3;
   width: fit-content;
   height: 485px;
@@ -268,6 +267,7 @@
   border-bottom: 1px solid gray;
   color: gray;
   font-weight: bold;
+  /* background-color: white; */
 }
 #listCat li:hover {
   color: black;
@@ -283,6 +283,7 @@
   text-decoration: none;
   color: gray;
   margin-right: 30px;
+  background-color: white;
 }
 #cateTable tr td {
   padding: 5px;
