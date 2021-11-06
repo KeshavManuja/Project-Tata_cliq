@@ -147,6 +147,9 @@
   color: white;
   border: none;
 }
+#popIcon {
+  margin-right: 10px;
+}
 
 #arrow {
   margin-top: 33px;
@@ -284,6 +287,16 @@
   color: gray;
   margin-right: 30px;
   background-color: white;
+}
+#cateTable tr th a {
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  margin-right: 30px;
+  background-color: white;
+}
+#cateTable tr th {
+  text-align: left;
 }
 #cateTable tr td {
   padding: 5px;
