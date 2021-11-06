@@ -26,7 +26,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <title>Document</title>
     <style>
       * {
         margin: 0%;
@@ -61,6 +61,12 @@
         height: 800px;
         /* background-color: teal; */
       }
+     
+        #rightbox #a{
+          display: inline-block;
+          margin-right: 65%;
+        }
+        
       
       .innerbox {
         width: 85%;
@@ -81,10 +87,7 @@
         font-family: "Zen Kaku Gothic Antique", sans-serif;
         color: rgba(0, 0, 0, 0.932);
       }
-      #rightbox #a{
-          display: inline-block;
-          margin-right: 65%;
-        }
+      
       /* price section */
       #price {
         /* border: 1px solid; */
@@ -223,7 +226,7 @@
             color: white;
             background-color:rgb(255, 12, 96); 
             margin-right: 4%;
-            margin-left: -43px;
+            margin-left: -50px;
             margin-top: 4%;
             height: 45px;
             border-radius: 50px;
@@ -253,8 +256,60 @@
            box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
            font-size: 15px;
          }
+         #fav{
+           height: 20px;
+           width: 20px;
 
+}
+         
+         /* tickMark */
+         #tickbtn1{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: teal;
+        }
+        #tickbtn2{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        #tickbtn3{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .change1{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-image: url('https://e7.pngegg.com/pngimages/266/277/png-clipart-check-mark-checkbox-computer-icons-symbol-tick-angle-hand-thumbnail.png');
+            background-size: cover;
+          
+
+        }
+        .change2{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-image: url('https://e7.pngegg.com/pngimages/266/277/png-clipart-check-mark-checkbox-computer-icons-symbol-tick-angle-hand-thumbnail.png');
+            background-size: cover;
+          
+
+        }
+        .change3{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-image: url('https://e7.pngegg.com/pngimages/266/277/png-clipart-check-mark-checkbox-computer-icons-symbol-tick-angle-hand-thumbnail.png');
+            background-size: cover;
+            background-color: aqua;
+
+        }
     </style>
+   
   </head>
   <body>
     <div id="container">
@@ -262,30 +317,30 @@
         <div class="innerbox">
           <img
             src="https://img.tatacliq.com/images/i7/437Wx649H/MP000000009068813_437Wx649H_202103132243151.jpeg"
-            alt="shoes1"
+            alt="shoes8"
           />
         </div>
       </div>
-      <!-- <<<<----------------------------------->
+   
       <div id="rightbox">
         <div class="innerbox">
           <div id="brandname">
-            <h3 id="a">ID</h3>
-            <div class="fa fa-heart" onclick="fav()" ></div>
-            <p>ID Men's Charcoal Black Casual Boots</p>
+            <h3  id="a">ID</h3>
+            <a href="#" id="fav"><i class="fa fa-heart" onclick="fav()" ></i></a>
+            <p>ID Men's Brown chukka Boots</p>
           </div>
           <!-- price section -->
           <div id="price">
-            <h1>₹1874</h1>
-            <p id="realprice">MRP.11999</p>
-            <p id="OFF">(66% OFF)</p>
+            <h1>₹1875</h1>
+            <p id="realprice">₹2205</p>
+            <p id="OFF">(20% OFF)</p>
           </div>
           <p id="taxes">inclusive of all taxes</p>
           <p id="shipping">Free Shipping till 2nd Nov</p>
 
           <!-- rating section -->
           <div id="rating">
-            <div id="star">4.2 <span class="fa fa-star checked"></span></div>
+            <div id="star">3 <span class="fa fa-star checked"></span></div>
             <h3 class="num">70</h3>
             <p class="R">Rating &</p>
             <h3 class="num">5</h3>
@@ -300,11 +355,11 @@
           <!-- size section -->
           <h5>Select Size</h5>
           <div id="allbtn">
-            <a href="#"><button>UK/IND-6</button></a>
-            <a href="#"><button>UK/IND-7</button></a>
-            <a href="#"><button>UK/IND-8</button></a>
-            <a href="#"><button>UK/IND-9</button></a>
-            <a href="#"><button>UK/IND-10</button></a>
+            <a href="#"><button id="btn1">UK/IND-6</button></a>
+            <a href="#"><button  id="btn2">UK/IND-7</button></a>
+            <a href="#"><button  id="btn3">UK/IND-8</button></a>
+            <a href="#"><button  id="btn4">UK/IND-9</button></a>
+            <a href="#"><button  id="btn5">UK/IND-10</button></a>
           </div>
 
             <div id="similar">
@@ -315,65 +370,60 @@
           <!-- color -->
         <div id="color">
          <label>Color:</label>
-        
-
-         <div id="circle">
-          <a href="#"><button id="red"></button></a>
-           <a href="#"><button  id="blue"></button></a>
-           <a href="#"><button id="black"></button></a>
+        <div id="circle">
+         <button id="tickbtn1"></button>
+         <button id="tickbtn2"></button>
+         <button id="tickbtn3"></button>
+           <!-- <a href="#"><button  id="blue"></button></a> -->
+           <!-- <a href="#"><button id="black"></button></a> -->
          </div>
         </div>
              
         <!-- buynow -->
 
-        <style>
-         
-         
-        </style>
+      
         <div id="lastbox">
           <button id="buy"  onclick="buy()">Buy Now</button>
-          <button id="cart"  onclick="cart()">Add To cart</button>
+          <button id="cart" >Add To cart</button>
         
 
         </div>
-
-
 
 </div>
     </div>
   </body>
 </html>
 <script>
-  document.getElementById("btn1").addEventListener("click",enterMouse1);
-function enterMouse1(){
- document.getElementById("btn1").style.backgroundColor="black";
-   document.getElementById("btn1").style.color="white";
-  }3
-  document.getElementById("btn2").addEventListener("click",enterMouse2);
-  function enterMouse2(){
-   document.getElementById("btn2").style.backgroundColor = "black";
-   document.getElementById("btn2").style.color= "white";
-  }
-  document.getElementById("btn3").addEventListener("click",enterMouse3);
-  function enterMouse3(){
-   document.getElementById("btn3").style.backgroundColor = "black";
-   document.getElementById("btn3").style.color= "white";
-  }
-  document.getElementById("btn4").addEventListener("click",enterMouse4);
-  function enterMouse4(){
-   document.getElementById("btn4").style.backgroundColor = "black";
-   document.getElementById("btn4").style.color= "white";
-  }
-  document.getElementById("btn5").addEventListener("click",enterMouse5);
-  function enterMouse5(){
-   document.getElementById("btn5").style.backgroundColor = "black";
-   document.getElementById("btn5").style.color= "white";
-
-  }
-  
- //  fav button-------------->>
-
-           function fav(){
+     document.getElementById("btn1").addEventListener("click",enterMouse1);
+  function enterMouse1(){
+    document.getElementById("btn1").style.backgroundColor="black";
+      document.getElementById("btn1").style.color="white";
+     }3
+     document.getElementById("btn2").addEventListener("click",enterMouse2);
+     function enterMouse2(){
+      document.getElementById("btn2").style.backgroundColor = "black";
+      document.getElementById("btn2").style.color= "white";
+     }
+     document.getElementById("btn3").addEventListener("click",enterMouse3);
+     function enterMouse3(){
+      document.getElementById("btn3").style.backgroundColor = "black";
+      document.getElementById("btn3").style.color= "white";
+     }
+     document.getElementById("btn4").addEventListener("click",enterMouse4);
+     function enterMouse4(){
+      document.getElementById("btn4").style.backgroundColor = "black";
+      document.getElementById("btn4").style.color= "white";
+     }
+     document.getElementById("btn5").addEventListener("click",enterMouse5);
+     function enterMouse5(){
+      document.getElementById("btn5").style.backgroundColor = "black";
+      document.getElementById("btn5").style.color= "white";
+   
+     }
+     
+    //  fav button-------------->>
+   
+    function fav(){
          var fav =JSON.parse(localStorage.getItem("favItems")) || [];
 
          
@@ -387,13 +437,61 @@ function enterMouse1(){
      window.location.href="fav1.html"
  })
 
- document.querySelector("body").append(button1)
-         
-        
-       
-      
-  
-</script>
+// color buttons
+// btn1
+document.getElementById("tickbtn1").addEventListener("click",hy1)
 
+    function hy1() {
+        document.getElementById("tickbtn1").setAttribute("class","change1")
+    }
+    // btn2
+    document.getElementById("tickbtn2").addEventListener("click",hy2)
+
+    function hy2() {
+        document.getElementById("tickbtn2").setAttribute("class","change2")
+    }
+    // btn3
+    document.getElementById("tickbtn3").addEventListener("click",hy3)
+
+    function hy3() {
+        document.getElementById("tickbtn3").setAttribute("class","change3")
+    }
+
+
+
+  //  data as object
+ var data = 
+    {
+      img_url:"https://img.tatacliq.com/images/i7/437Wx649H/MP000000009068813_437Wx649H_202103132243151.jpeg",
+        type:"ID",
+        name:"ID Men's Brown Chukka Boots",
+        price:"₹1875",
+        link:"P8.html",
+        discount:"20%",
+        rating:"3",
+    }
+      
+    document.getElementById("cart").addEventListener("click",dO);
+    function dO(){
+   localStorage.setItem("myObject",data);
+      var s =JSON.stringify(data);
+     localStorage.setItem("newS",s);
+     var originalObject = JSON.parse(localStorage.getItem("new"))
+     console.log(originalObject)
+    }
+
+
+
+
+
+    //appending fav utton
+
+    document.querySelector("body").append("fav")
+            
+           
+          
+         
+     
+</script>
  
     
