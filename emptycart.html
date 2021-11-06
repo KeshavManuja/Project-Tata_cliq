@@ -8,19 +8,21 @@
     <style>
         #container{
             background-color: #ececec;
+            height: 600px;
         }
         #nav{
             display: inline-block;
             width: 100%;
-            height: 100px;
-            background-color: #212121;
+            height: 80px;
+            background-color: white;
+            margin-bottom: 10px;
+            text-align: center;
         }
         #bag{
             height: 80px;
             width: 100%;
             background-color: #ffffff;
             border-bottom: 10px;
-            border: 1px solid black;
         }
         #empty{
             height: 400px;
@@ -31,21 +33,31 @@
             padding: auto;
             position: absolute;
             left: 5%;
+            border-top: 5px;
+        }
+        img{
+            height: 250px;
+            width: 200px;
         }
         button{
             border-radius: 800px;
+        }
+        button:hover{
+            background-color: brown;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <div id="nav"></div>
+        <div id="nav">NAV</div>
         <div id="bag">
             <h1>My Bag</h1>
         </div>
         <div id="empty">
-            <i class="fas fa-shopping-bag"></i>
             <h3>Your bag is empty! Let’s fill it up shall we?</h3>
+            <div>
+                <img src="https://www.clipartmax.com/png/full/283-2834123_shopping-bag-free-icon-orange-shopping-bags-icon.png" />
+            </div>
             <button>
                 <h2>Continue Shopping</h2>
             </button>
