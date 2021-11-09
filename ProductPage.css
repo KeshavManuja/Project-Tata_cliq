@@ -1,0 +1,302 @@
+/* <style> */
+
+#container{
+    display: grid;
+    grid-gap:1%;
+    grid-template-columns:auto auto auto auto; 
+    margin:0;
+    padding: 0;
+    position: relative;
+    /* border:2px solid teal; */
+    }
+    #imgDiv{
+    height: 280px;
+    width:200px;
+    cursor: pointer;
+    } 
+    #imgDiv:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+    }
+    body{
+    background-color: rgb(236,236,236);
+    font-family: regular;
+    }
+    h2{
+    font-family: 'Saira Condensed', sans-serif;
+    line-height: 25px;
+    }
+    p{
+    line-height: 25px;
+    font-weight: normal;
+    }
+    
+    .discount{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    
+    .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr
+    }
+    
+    button{
+    background-color: green;
+    color: white;
+    width: 70px;
+    font-size: 24px;
+    }
+    
+    i{
+    margin: 5px;
+    vertical-align: bottom;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    hr{
+    width:90%;
+    margin: auto;
+    margin-bottom: 15px;
+    }
+    #Cont{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width:90%;
+    height:60px;
+    margin: auto;
+    margin-top: 20px; 
+    /* border:2px solid red; */
+    margin-bottom: 70px;
+    }  
+    #text{
+    text-align: center;
+    font-size: 30px;
+    line-height: 0%;
+    margin-top: 20px;
+    }
+    #product{
+    text-align: center;
+    font-size: 15px;
+    line-height: 50px;
+    }
+    #first{
+    width:300px;
+    height:600px;
+    border-radius: 5px;
+    border:1px solid gray;
+    display: inline-block;
+    margin-right: 40px;
+    position: sticky;
+    top: 0%;
+    margin-left: 10%;
+    }
+    
+    #Scnd{
+    display: inline-block;
+    /* border:1px solid red; */
+    width:57%;
+    height:75%;
+    border-radius: 10px;
+    vertical-align: top;
+    }
+    
+    
+    
+    
+    #filter{
+    display: flex;
+    width:90%;
+    height: 7%;
+    background-color: whitesmoke;
+    gap: 160px;
+    padding-left: 20px;
+    margin-bottom: 11px;
+    margin: auto;
+    }
+    #filter>p{
+    font-weight: bold;
+    margin-top: 18px;
+    }
+    #filter>a{
+    padding-top: 16px;
+    text-decoration: none;
+    color:red;
+    font-weight: bold;
+    }
+    #second>p{
+    margin-left: 30px;
+    line-height: 5px;
+    font-weight: bold;
+    
+    }
+    #second>div>a{
+    text-decoration: none;
+    padding-left: 10px;
+    font-weight: normal;
+    color:gray;
+    }
+    #second>div{
+    height:30px;
+    width:80px;
+    margin-top: 20px;
+    border:1px solid whitesmoke;
+    background-color: whitesmoke;
+    margin-left: 25px;
+    border-radius: 30px;
+    margin-bottom: 11px;
+    }
+    
+    #box,#box1,#box2,#box3{
+    display:none;
+    line-height: 30px;
+    font-weight: normal;
+    font-size: 14px;
+    color:#565656;
+    margin-left: 30px;
+    }
+    #category{
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin-left: 30px;
+    display: inline-block;
+    margin-right: 160px;
+    }
+    #plus{
+    display:inline-block;
+    height:15px;
+    width:15px;
+    }
+    #sub{
+    display:none;
+    height:15px;
+    width:15px;
+    }
+    
+    #dox,#dox1,#dox2,#dox3{
+    display:none;
+    line-height: 30px;
+    font-weight: normal;
+    font-size: 14px;
+    color:#565656;
+    margin-left: 30px;
+    }
+    #brand{
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin-left: 30px;
+    display: inline-block;
+    margin-right: 180px;
+    }
+    #BrandPlus{
+    display:inline-block;
+    height:15px;
+    width:15px;
+    }
+    #BrandSub{
+    display:none;
+    height:15px;
+    width:15px;
+    }
+    #Fox,#Fox1,#Fox2,#Fox3{
+    display:none;
+    line-height: 30px;
+    font-weight: normal;
+    font-size: 14px;
+    color:#565656;
+    margin-left: 30px;
+    }
+    #price{
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin-left: 30px;
+    display: inline-block;
+    margin-right: 185px;
+    }
+    
+    #PricePlus{
+    display:inline-block;
+    height:15px;
+    width:15px;
+    }
+    #PriceSub{
+    display:none;
+    height:15px;
+    width:15px;
+    }
+    
+    #jox,#jox1,#jox2,#jox3{
+    display:none;
+    line-height: 30px;
+    font-weight: normal;
+    font-size: 14px;
+    color:#565656;
+    margin-left: 30px;
+    }
+    #discount{
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin-left: 30px;
+    display: inline-block;
+    margin-right: 160px;
+    }
+    #DiscountPlus{
+    display:inline-block;
+    height:15px;
+    width:15px;
+    }
+    #DicountSub{
+    display:none;
+    height:15px;
+    width:15px;
+    }
+    .same{
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin-left: 30px;
+    display: inline-block;
+    }
+    .sameplus{
+    display:inline-block;
+    height:15px;
+    width:15px;
+    }
+    #Size{
+    margin-right: 190px;
+    }
+    #Fastening{
+    margin-right: 150px;
+    }
+    #HeelHeight{
+    margin-right: 140px;
+    }
+    #HeelType{
+    margin-right: 150px;
+    }
+    #SoleMaterial{
+    margin-right: 130px;
+    }
+    #TipSize{
+    margin-right: 165px;
+    }
+    /* </style> */

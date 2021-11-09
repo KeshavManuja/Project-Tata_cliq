@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        
+*{
+    background-color: whitesmoke;
+}
+#box{
+    width:1200px;
+    height:500px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+#box>img{
+    height:100%;
+    width:100%;
+}
+
+#box3{
+width:1200px;
+margin-left: 100px;
+margin-bottom: 20px;
+}
+#box4{
+margin-left: 100px;
+margin-bottom: 60px;
+}
+#box5{
+  display: flex;
+  gap:50px;
+  margin-left: 140px;
+  margin-bottom: 50px;
+  height:350px;
+  width:1300px;
+}
+#box6{
+margin-left: 110px;
+margin-bottom: 20px;
+}
+#box7{
+margin-left: 110px;
+  margin-bottom: 20px;
+}
+#fir{
+    height:300px;
+    width:300px;
+    margin-right:10px;
+ 
+}
+#fir>img{
+    height:100%;
+    width:100%;
+   
+}
+
+#sec{
+    height:300px;
+    width:300px;
+    margin-right:10px;
+}
+#sec>img{
+    height:100%;
+    width:100%;
+ 
+}
+#thi{
+    height:300px;
+    width:300px;
+    margin-right:10px;
+}
+#thi>img{
+    height:100%;
+    width:100%;
+ 
+}
+#box2{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    height: 400px;
+    width:1200px;
+}
+ #first{
+     width:550px;
+     height:350px;
+ }
+ #first>img{
+     height:100%;
+     width:100%;
+ }
+ #second{
+    width:550px;
+     height:350px;
+ }
+ #second>img{
+     height:100%;
+     width:100%;
+ }
+
+    </style> 
+</head>
+<body>
+    <a href="">
+        <div id = "box">
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/31653735137310.jpg" alt="No Image">
+         </div>
+    </a>
+
+
+<div id="box2">
+<a   href=""><div id = "first" ><img src="https://assets.tatacliq.com/medias/sys_master/images/31581270540318.png" alt="No image"></div></a>
+<a href=""><div id = "second"><img src="https://assets.tatacliq.com/medias/sys_master/images/31581270605854.png" alt="No image"></div></a>
+</div>
+
+
+<a href=""><div id = "box3"><img src="https://assets.tatacliq.com/medias/sys_master/images/31628697927710.png" alt="No image"></div></a>
+<a href=""><div id ="box4"><img src="https://assets.tatacliq.com/medias/sys_master/images/31655829176350.jpg" alt="No image"></div></a>
+
+
+<div id = "box5">
+<a href=""><div id = "fir"><img src="https://assets.tatacliq.com/medias/sys_master/images/31655829307422.jpg" alt="No image"></div></a>
+<a href=""><div id = "sec"><img src="https://assets.tatacliq.com/medias/sys_master/images/31655829438494.jpg" alt="No image"></div></a>
+<a href=""><div id = "thi"><img src="https://assets.tatacliq.com/medias/sys_master/images/31655829504030.jpg" alt="No image"></div></a>
+</div>
+
+
+<a href=""><div id = "box6"><img src="https://assets.tatacliq.com/medias/sys_master/images/31655829241886.jpg" alt="No image"></div></a>
+<a href=""><div id = "box7"><img src="https://assets.tatacliq.com/medias/sys_master/images/31446637051934.jpg" alt="No image"></div></a>
+
+
+</body>
+</html>
+
+<script>
+
+document.getElementById("first").addEventListener("mouseenter",incraseWidth);
+function incraseWidth(e){
+ e.target.style.width= "580px"
+ e.target.style.height="380px"
+ e.target.style.padding="10px"
+}
+
+document.getElementById("first").addEventListener("mouseleave",decrease)
+function decrease(e){
+ e.target.style.width= "550px"
+ e.target.style.height="350px"
+}
+
+
+document.getElementById("second").addEventListener("mouseenter",incraseWidth);
+function incraseWidth(e){
+ e.target.style.width= "580px"
+ e.target.style.height="380px"
+ e.target.style.padding="10px"
+}
+
+document.getElementById("second").addEventListener("mouseleave",decrease)
+function decrease(e){
+ e.target.style.width= "530px"
+ e.target.style.height="350px"
+}
+
+document.getElementById("fir").addEventListener("mouseenter",incrase);
+function incrase(e){
+ e.target.style.width= "320px"
+ e.target.style.height="320px"
+ e.target.style.padding="10px"
+}
+
+document.getElementById("fir").addEventListener("mouseleave",decreaseWidth)
+function decreaseWidth(e){
+ e.target.style.width= "300px"
+ e.target.style.height="300px"
+}
+
+document.getElementById("sec").addEventListener("mouseenter",incrase);
+function incrase(e){
+ e.target.style.width= "320px"
+ e.target.style.height="320px"
+ e.target.style.padding="10px"
+}
+
+document.getElementById("sec").addEventListener("mouseleave",decreaseWidth)
+function decreaseWidth(e){
+ e.target.style.width= "300px"
+ e.target.style.height="300px"
+}
+
+document.getElementById("thi").addEventListener("mouseenter",incrase);
+function incrase(e){
+ e.target.style.width= "320px"
+ e.target.style.height="320px"
+ e.target.style.padding="10px"
+}
+
+document.getElementById("thi").addEventListener("mouseleave",decreaseWidth)
+function decreaseWidth(e){
+ e.target.style.width= "300px"
+ e.target.style.height="300px"
+}
+
+
+
+</script>
