@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tatacliq</title>
+    <title>Tatacliq-xxx</title>
     <link rel="stylesheet" href="testCss.css">
+    <link rel="stylesheet" href="pop.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="pop.css">
+
     <style>
         .mainbox {
             position: relative;
@@ -288,7 +291,7 @@
                     <p id="arrow"></p>
                     <ul id="loginList">
 
-                        <li><button>Login/Register</button></li>
+                        <li><button id="popDisplay">Login/Register</button></li>
                         <li><i id="popIcon" class="fal fa-user-circle"></i>My account</li>
                         <li><i id="popIcon" class="fal fa-briefcase"></i>Order History</li>
                         <li><i id="popIcon" class="fal fa-bookmark"></i>Saved List</li>
@@ -375,6 +378,48 @@
         </div>
     </div>
 
+
+    <!-- pop login bar  -->
+
+    <div id="popContainer">
+        <div id="popBox">
+            <i id="popPlus" class="fal fa-plus"></i>
+            <div>
+                <h1>Welcome To Tata</h1>
+                <h1>CLiQ</h1>
+            </div>
+            <div id="popMobileDiv">
+                <p>Please enter your mobile number</p>
+                <div id="popMobile"><span>+91</span><span><input type="text" placeholder="Mobile Number"></span></div>
+                <div>
+                    <p id="selectEmail">Use Email Address</p>
+                </div>
+            </div>
+
+
+            <div id="popEmailDiv">
+                <p>Please enter your email address</p>
+                <div id="popEmail"><input type="text" placeholder="E-mail Address"></span></div>
+
+                <div>
+                    <p id="selectMobile">Use Mobile Number</p>
+                </div>
+
+
+            </div>
+
+
+
+            <div id="pTnc">
+                <p>By continue you are agree to our <span id="tnc">Terms of Service</span>&<span id="tnc">Privacy
+                        Policy</span></p>
+            </div>
+
+            <button id="popBtn">Continue</button>
+
+
+        </div>
+    </div>
 
 
 
@@ -571,3 +616,4 @@
 
 <script src="nav.js"></script>
 <script src="brand.js"></script>
+<script src="pop.js"></script>

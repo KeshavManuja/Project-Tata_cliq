@@ -107,6 +107,7 @@
 }
 #nav2box1c {
   margin: 0px;
+  cursor: pointer;
   /* padding: 30px 0px; */
   /* height: 30px; */
 }
@@ -138,14 +139,16 @@
   list-style: none;
   background-color: white;
   padding: 5px;
+  cursor: pointer;
 }
 
-#loginList button {
+#popDisplay {
   background-color: #ff1744;
   padding: 10px 25px;
   border-radius: 25px;
   color: white;
   border: none;
+  cursor: pointer;
 }
 #popIcon {
   margin-right: 10px;
@@ -194,6 +197,7 @@
   background-color: white;
   width: fit-content;
   height: 485px;
+  cursor: pointer;
 }
 #brandTable {
   margin-left: 25px;
@@ -261,6 +265,7 @@
   z-index: 3;
   width: fit-content;
   height: 485px;
+  cursor: pointer;
 }
 
 #listCat li {
