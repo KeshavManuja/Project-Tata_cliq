@@ -15,18 +15,20 @@
 #nav2icon {
   color: white;
   float: right;
-  padding: 20px 50px;
+  padding: 20px 5%;
 }
 #nav2pop {
-  margin-top: 50px;
-  float: right;
-  margin-right: -120px;
+  margin-top: -10px;
+  /* float: right; */
+  margin-left: 80%;
+  position: absolute;
   background-color: white;
   padding: 0px 0px 0px 10px;
   color: black;
   z-index: 2;
   display: none;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 #nav2imog {
   padding: 0px 30px;
@@ -57,7 +59,6 @@
 #nav2loginList li {
   list-style: none;
   padding: 15px;
-  color: gray;
 }
 #nav2popIcon {
   margin-right: 15px;
