@@ -64,20 +64,11 @@ document.getElementById("tickbtn1").addEventListener("click",hy1)
 
 
 //  data as object
-var data = 
-  {
-    img_url:"https://img.tatacliq.com/images/i7/437Wx649H/MP000000009068833_437Wx649H_202103132244211.jpeg",
-      type:"ID",
-      name:"ID Men's Brown Casual Boots",
-      price:"₹1886",
-      link:"P1.html",
-      discount:"30",
-      rating:"3",
-  }
+
     
   document.getElementById("cart").addEventListener("click",dO);
   function dO(){
- localStorage.setItem("myObject",data);
+//  localStorage.setItem("myObject",data);
     var s =JSON.stringify(data);
    localStorage.setItem("newS",s);
    var originalObject = JSON.parse(localStorage.getItem("new"))
