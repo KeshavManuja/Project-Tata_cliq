@@ -20,6 +20,7 @@
   margin-top: 0px;
   display: block;
   width: 100%;
+
   /* overflow: auto; */
 
   position: relative;
@@ -46,13 +47,12 @@
 }
 #logo {
   display: inline-block;
-  padding: 10px 40px 10px 40px;
+  padding: 10px 40px 10px 5%;
 }
 #nav2box1 {
   display: flex;
 
   color: white;
-  margin: ;
 }
 #nav2box2 {
   margin-top: auto;
@@ -188,7 +188,7 @@
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: absolute;
-  margin-left: 150px;
+  margin-left: 173px;
   display: none;
   /* position: sticky; */
   top: 95px;
@@ -257,10 +257,11 @@
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: absolute;
-  margin-left: 150px;
+  margin-left: 173px;
   display: none;
   background-color: white;
   top: 95px;
+  /* position: sticky; */
   /* background-color: #fff; */
   z-index: 3;
   width: fit-content;
@@ -316,6 +317,7 @@
 #farb {
   margin-left: 5px;
   font-size: 25px;
+  transition: 0.5s;
 }
 
 span .fa-angle-right {
