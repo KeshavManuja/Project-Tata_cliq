@@ -1,0 +1,63 @@
+/* <style> */
+*{
+    font-family: 'Rubik', sans-serif;
+}
+#wishlist{
+    height: 550px;;
+    width:250px;
+    border:2px solid whitesmoke;
+    margin-left: 12%;
+    border-radius: 5px;
+}
+#menu{
+    background-color: whitesmoke;
+    height: 8%;
+}
+#menu>p{
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 15px;
+   line-height: 40px;
+   /* margin-bottom: 10px; */
+}
+#savelist{
+    /* border:2px solid red; */
+    height:8%;
+    margin-top: 5px;
+    display: flex;
+    text-decoration: none;
+    color: red;
+    
+}
+#savelist>img{
+    height:18px;
+    width:18px;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#savelist>p{
+    margin-top: 10px;
+}
+
+.common{
+    /* border:2px solid red; */
+    height:8%;
+    margin-top: 5px;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    
+}
+.common>img{
+    height:18px;
+    width:18px;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.common>p{
+    margin-top: 10px;
+}
+
+/* </style> */
