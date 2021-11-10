@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+         #container{
+      height:40px;
+      width:900px;
+      margin-bottom: 5px;
+      /* border:1px solid red; */
+      margin-left: 30px;
+      margin-top: 10px;
+  }
+  #card{
+      height:30px;
+      width:30px;
+      display: inline-block;
+      margin-right: 15px;
+  }
+  #container>div{
+      display: inline-block;
+      vertical-align: 9px;  
+      margin-right: 670px;
+  }
+  #arrow{
+    height:30px;
+      width:30px;
+      display: inline-block;
+  }
+  #arrowUpper{
+    height:25px;
+      width:25px;
+      display: none;
+  }
+
+  #first{
+        height: 100px;
+        width:500px;
+        border-top: 300px;
+        /* border:1px solid red; */
+        display: none;
+        margin-left: 30px;
+      }
+
+  #cardNumber{
+          height:30px;
+          width:210px;
+          margin-right: 15px;
+          margin-bottom: 10px;
+      }
+      #name{
+        height:30px;
+          width:210px; 
+          margin-right: 15px;
+      }
+      #select{
+          width:130px;
+          height: 30px;
+      }
+      #year{
+          width:120px;
+          height: 30px;
+      }
+      #ccv{
+        width:100px;
+          height: 30px;
+          margin-right: 20px;
+      }
+      #btn{
+        width:100px;
+          height: 30px; 
+          border-radius: 20px;
+          background-color: #ff1744;
+          border: 1px solid #ff1744;
+          color: white;
+      }
+
+      #DebitContainer{
+      height:40px;
+      width:900px;
+      margin-bottom: 5px;
+      /* border:1px solid red; */
+      margin-left: 30px;
+      margin-top: 10px;
+  }
+  #Debit{
+      height:30px;
+      width:30px;
+      display: inline-block;
+      margin-right: 15px;
+  }
+  #DebitContainer>div{
+      display: inline-block;
+      vertical-align: 9px;  
+      margin-right: 670px;
+  }
+  #Lower{
+    height:30px;
+      width:30px;
+      display: inline-block;
+  }
+  #Upper{
+    height:25px;
+      width:25px;
+      display: none;
+  }
+
+  #Line1{
+        height: 100px;
+        width:500px;
+        margin-left: 30px;
+        display: none;
+      }
+
+  #DebitNumber{
+          height:30px;
+          width:210px;
+          margin-right: 15px;
+          margin-bottom: 10px;
+      }
+      #DebitName{
+        height:30px;
+          width:210px; 
+          margin-right: 15px;
+      }
+      #ExpiryM{
+          width:130px;
+          height: 30px;
+      }
+      #ExpiryY{
+          width:120px;
+          height: 30px;
+      }
+      #Back{
+        width:100px;
+          height: 30px;
+          margin-right: 20px;
+      }
+      #Button{
+        width:100px;
+          height: 30px; 
+          border-radius: 20px;
+          background-color: #ff1744;
+          border: 1px solid #ff1744;
+          color: white;
+      }
+
+      #EMIpytm{
+      height:40px;
+      width:900px;
+      margin-bottom: 5px;
+      /* border:1px solid red; */
+      margin-left: 30px;
+      margin-top: 10px;
+  }
+  #EMI{
+      height:30px;
+      width:30px;
+      display: inline-block;
+      margin-right: 15px;
+  }
+  #EMIpytm>div{
+      display: inline-block;
+      vertical-align: 9px;  
+      margin-right: 710px;
+  }
+  #low{
+    height:30px;
+      width:30px;
+      display: inline-block;
+  }
+  #Pytm_UPI{
+      height:40px;
+      width:900px;
+      margin-bottom: 5px;
+      /* border:1px solid red; */
+      margin-left: 30px;
+      margin-top: 10px;
+  }
+  #UPI{
+      height:30px;
+      width:30px;
+      display: inline-block;
+      margin-right: 15px;
+  }
+  #Pytm_UPI>div{
+      display: inline-block;
+      vertical-align: 9px;  
+      margin-right: 690px;
+  }
+  #arrow_lower{
+    height:30px;
+      width:30px;
+      display: inline-block;
+  }
+
+  #netbanking{
+      height:40px;
+      width:900px;
+      margin-bottom: 5px;
+      /* border:1px solid red; */
+      margin-left: 30px;
+      margin-top: 10px;
+  }
+  #net{
+      height:30px;
+      width:30px;
+      display: inline-block;
+      margin-right: 15px;
+  }
+  #netbanking>div{
+      display: inline-block;
+      vertical-align: 9px;  
+      margin-right: 650px;
+  }
+  #arrowlower{
+    height:30px;
+      width:30px;
+      display: inline-block;
+  }
+
+  #CashOnDelivery{
+      height:40px;
+      width:900px;
+      margin-bottom: 5px;
+      /* border:1px solid red; */
+      margin-left: 30px;
+      margin-top: 10px;
+  }
+  #COD{
+      height:30px;
+      width:30px;
+      display: inline-block;
+      margin-right: 15px;
+  }
+  #CashOnDelivery>div{
+      display: inline-block;
+      vertical-align: 9px;  
+      margin-right: 620px;
+  }
+  #codarrow{
+    height:30px;
+      width:30px;
+      display: inline-block;
+  }
+
+
+ #box{
+     margin-left: 30px;
+    margin-top: 10px;
+        }
+#box>div{
+    display: inline-block;
+    margin-right: 5px;
+}
+#number{
+    height:20px;
+    width:30px;
+    border:2px solid black;
+    border-radius: 150px;
+    text-align: center;
+    font-weight: 600;
+}
+#text{
+    font-weight: bold;
+    font-size: 20px;
+}
+#main{
+    height:410px;
+    width:900px;
+    border:1px solid gray;
+}
+hr{
+    width:90%;
+    margin: auto;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <div id = "main">
+        <div id = "box">
+            <div id = "number">3</div>
+            <div id = "text">Payment Method</div>
+          </div><hr>
+          <div id= "container">
+            <img  id = "card" src="https://cdn-icons-png.flaticon.com/512/633/633611.png" alt="">
+            <div>Credit card</div>
+           
+            <img id = "arrow" src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1636004661~hmac=5cc1152060cacb0ad67f9f3ace6a5ac3" alt="">
+            <img id = "arrowUpper" src="https://cdn-icons-png.flaticon.com/512/130/130906.png" alt="">
+        </div>
+        <div id = "first">
+            <input id = "cardNumber" type="number" placeholder="Card Number*">
+           <select name="" id="select">
+            <option value="">Expiry Month</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+           </select>
+        
+           <select name="" id="year">
+            <option value="">Expiry Year</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+            <option value="2031">2031</option>
+            <option value="2032">2032</option>
+           </select>
+        
+           <div id = "second">
+            <input id = "name" type="text" placeholder="Name On Card*">
+            <input id ="ccv"  type="number" placeholder="CCV">
+            <button id = "btn">Pay Now</button>   
+        </div>
+         </div><hr>
+
+
+
+
+         <div id= "DebitContainer">
+            <img  id = "Debit" src="https://cdn-icons.flaticon.com/png/512/657/premium/657076.png?token=exp=1636019550~hmac=e9c4c45c4c2d805d72aca7fe0038b9c4" alt="">
+            <div>Debit Card</div>
+           
+            <img id = "Lower" src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1636004661~hmac=5cc1152060cacb0ad67f9f3ace6a5ac3" alt="">
+            <img id = "Upper" src="https://cdn-icons-png.flaticon.com/512/130/130906.png" alt="">
+        </div>
+        <div id = "Line1">
+            <input id = "DebitNumber" type="number" placeholder="Card Number*">
+           <select id="ExpiryM">
+            <option value="">Expiry Month</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+           </select>
+        
+           <select  id="ExpiryY">
+            <option value="">Expiry Year</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+            <option value="2031">2031</option>
+            <option value="2032">2032</option>
+           </select>
+        
+           <div id = "Line2">
+            <input id = "DebitName" type="text" placeholder="Name On Debit*">
+            <input id ="Back"  type="number" placeholder="CCV">
+            <button id = "Button">Pay Now</button>   
+        </div>
+         </div><hr>
+
+         <div id= "EMIpytm">
+            <img  id = "EMI" src="https://th.bing.com/th/id/OIP.OYzQl1A5JBLbOFCe6mw_-QHaD4?w=343&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="">
+            <div>EMI</div>
+           
+            <img id = "low" src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1636004661~hmac=5cc1152060cacb0ad67f9f3ace6a5ac3" alt="">
+        </div><hr>
+
+        <div id= "Pytm_UPI">
+            <img  id = "UPI" src="https://gadgetstouse.com/wp-content/uploads/2016/11/UPI-Logo.jpg" alt="">
+            <div>UPI ID</div>
+           
+            <img id = "arrow_lower" src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1636004661~hmac=5cc1152060cacb0ad67f9f3ace6a5ac3" alt="">
+        </div><hr>
+
+        <div id= "netbanking">
+            <img  id = "net" src="https://cdn-icons.flaticon.com/png/512/4943/premium/4943661.png?token=exp=1636025785~hmac=4492d21dee5a7de1ca10baffab6f3cc0" alt="">
+            <div>Net Banking</div>
+           
+            <img id = "arrowlower" src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1636004661~hmac=5cc1152060cacb0ad67f9f3ace6a5ac3" alt="">
+        </div><hr>
+
+        <div id= "CashOnDelivery">
+            <img  id = "COD" src="https://cdn-icons.flaticon.com/png/128/3796/premium/3796116.png?token=exp=1636025968~hmac=a00bc411a0d0b76d9a0e132a3f3eacf7" alt="">
+            <div>Cash On Delivery</div>
+           
+            <img id = "codarrow" src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1636004661~hmac=5cc1152060cacb0ad67f9f3ace6a5ac3" alt="">
+        </div>
+</div>
+</body>
+</html>
+
+<script>
+    var span =document.getElementById("container").addEventListener("click",myFnct)
+    var div = document.getElementById("first")
+    var arrow = document.getElementById("arrow")
+    var arrowUpper = document.getElementById("arrowUpper")
+    var count = 0;
+    function myFnct(){
+   count++
+   if(count%2==1){
+        arrow.style.display="none";
+        arrowUpper.style.display="inline-block"
+       div.style.display="inline-block";
+   }else {
+       arrowUpper.style.display="none";
+       arrow.style.display="inline-block";
+       div.style.display="none";
+   }
+    }
+   
+
+
+
+    document.getElementById("DebitContainer").addEventListener("click",showData)
+    var Dee = document.getElementById("Line1")
+    var Lower = document.getElementById("Lower")
+    var Upper = document.getElementById("Upper")
+    var count = 0;
+    function showData(){
+   count++
+   if(count%2==1){
+        Lower.style.display="none";
+        Upper.style.display="inline-block"
+       Dee.style.display="inline-block";
+   }else {
+       Upper.style.display="none";
+       Lower.style.display="inline-block";
+       Dee.style.display="none";
+   }
+    }
+   
+   </script>
