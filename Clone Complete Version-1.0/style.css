@@ -470,8 +470,8 @@
   /* size */
   #allbtn{
     display: flex;
-    flex-wrap: wrap;
-    justify-content:start;
+    
+    justify-content:space-evenly;
     margin-top: 2%;
   }
   #allbtn button{
@@ -627,3 +627,90 @@
         font-family: 'Montserrat', sans-serif;
         font-family: 'Rubik', sans-serif;
     }
+    #check,#check1,#check2{
+      display: none;
+  }
+
+  #color1{
+      background-color: blue;
+      
+      width: 30px;
+      
+      height: 30px;
+      border-radius: 50%;
+      
+      
+
+  }
+  #check[type=radio]:checked+#color1{
+      background-image: url('https://cdn-icons-png.flaticon.com/512/447/447147.png');
+      background-size: cover;
+  }
+  #check1[type=radio]:checked+#color2{
+      background-image: url('https://cdn-icons-png.flaticon.com/512/447/447147.png');
+      background-size: cover;
+  }
+  #color2{
+      background-color:violet;
+      
+      width: 30px;
+      
+      height: 30px;
+      margin-left: 20px;
+      border-radius: 50%;
+      
+  }
+  #check2[type=radio]:checked+#color3{
+    background-image: url('https://cdn-icons-png.flaticon.com/512/447/447147.png');
+    background-size: cover;
+}
+#color3{
+    background-color:darkcyan;
+    
+    width: 30px;
+    
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 50%;
+    
+}
+
+#sizecheck1,#sizecheck5,#sizecheck2,#sizecheck3,#sizecheck4{
+  display: none;
+}
+
+.size{
+  background-color: white;
+  margin:0px 6px;
+  box-shadow: 5px 5px 3px #aaaaaa;
+  width: 150px;
+  padding: 3px;
+  text-align: center;
+  height: 23px;
+  border-radius: 10px;
+  border:0.5px solid lightgray;
+  font-size: 15px;
+  
+  
+
+}
+#sizecheck1[type=radio]:checked+.size{
+  background-color: black;
+  color: white;
+}
+#sizecheck5[type=radio]:checked+.size{
+  background-color: black;
+  color: white;
+}
+#sizecheck2[type=radio]:checked+.size{
+  background-color: black;
+  color: white;
+}
+#sizecheck3[type=radio]:checked+.size{
+  background-color: black;
+  color: white;
+}
+#sizecheck4[type=radio]:checked+.size{
+  background-color: black;
+  color: white;
+}
