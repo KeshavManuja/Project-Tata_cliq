@@ -127,6 +127,15 @@ body{
     
 
 }
+#codebox{
+    width: 93%;
+    height: 30px;
+    margin-top: 10px;
+    color: hotpink;
+}
+#coupon+p{
+    cursor: pointer;
+}
 .totalamount{
     display: flex;
     justify-content: space-between;

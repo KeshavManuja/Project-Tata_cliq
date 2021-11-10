@@ -226,13 +226,24 @@ function movetopayment() {
     window.location.href="checkout.html"
 }
 
-// ADDRESS
-var add=JSON.parse(localStorage.getItem("address"))
-console.log(add)
-var showadd=add[1]+","+add[4]
-document.getElementById("addr").textContent=showadd
+// // ADDRESS
+// var add=JSON.parse(localStorage.getItem("address"))
+// console.log(add)
+// var showadd=add[1]+","+add[4]
+// document.getElementById("addr").textContent=showadd
 
+// coupon
+document.getElementById("codecheck").addEventListener("click",showcode)
+var count=0
+function showcode() {
+if(count==0) {
+    var code=document.createElement("input")
+    code.placeholder="Enter Code Here"
+    code.setAttribute("id","codebox")
+    document.getElementById("codeinput").append(code)
+    count++}
 
+}
 
 
 
