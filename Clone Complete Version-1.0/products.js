@@ -1,29 +1,4 @@
-document.getElementById("btn1").addEventListener("click",enterMouse1);
-function enterMouse1(){
-  document.getElementById("btn1").style.backgroundColor="black";
-    document.getElementById("btn1").style.color="white";
-   }3
-   document.getElementById("btn2").addEventListener("click",enterMouse2);
-   function enterMouse2(){
-    document.getElementById("btn2").style.backgroundColor = "black";
-    document.getElementById("btn2").style.color= "white";
-   }
-   document.getElementById("btn3").addEventListener("click",enterMouse3);
-   function enterMouse3(){
-    document.getElementById("btn3").style.backgroundColor = "black";
-    document.getElementById("btn3").style.color= "white";
-   }
-   document.getElementById("btn4").addEventListener("click",enterMouse4);
-   function enterMouse4(){
-    document.getElementById("btn4").style.backgroundColor = "black";
-    document.getElementById("btn4").style.color= "white";
-   }
-   document.getElementById("btn5").addEventListener("click",enterMouse5);
-   function enterMouse5(){
-    document.getElementById("btn5").style.backgroundColor = "black";
-    document.getElementById("btn5").style.color= "white";
- 
-   }
+
    
   //  fav button-------------->>
  
@@ -41,25 +16,6 @@ function enterMouse1(){
    window.location.href="fav1.html"
 })
 
-// color buttons
-// btn1
-document.getElementById("tickbtn1").addEventListener("click",hy1)
-
-  function hy1() {
-      document.getElementById("tickbtn1").setAttribute("class","change1")
-  }
-  // btn2
-  document.getElementById("tickbtn2").addEventListener("click",hy2)
-
-  function hy2() {
-      document.getElementById("tickbtn2").setAttribute("class","change2")
-  }
-  // btn3
-  document.getElementById("tickbtn3").addEventListener("click",hy3)
-
-  function hy3() {
-      document.getElementById("tickbtn3").setAttribute("class","change3")
-  }
 
 
 
@@ -68,20 +24,63 @@ document.getElementById("tickbtn1").addEventListener("click",hy1)
     
   document.getElementById("cart").addEventListener("click",dO);
   function dO(){
-//  localStorage.setItem("myObject",data);
     var cart=JSON.parse(localStorage.getItem("cartlist")) || [];
-    cart.push(data);
-   localStorage.setItem("cartlist",JSON.stringify(cart));
-//    var originalObject = JSON.parse(localStorage.getItem("new"))
-//    console.log(originalObject)
+  
+
+    if(cart.length==0) {
+      cart.push(data);
+      localStorage.setItem("cartlist",JSON.stringify(cart));
+      // window.location.href="cart.html"
+      // console.log("firsdt")
+      // console.log(pushed)
+    }
+    else{
+    for(var i=0; i<cart.length; i++) {
+      if(JSON.stringify(cart[i])==JSON.stringify(data)) {
+        alert("Product is already added to cart")
+        break}
+      else {
+        // console.log("pushed")
+        cart.push(data);
+        localStorage.setItem("cartlist",JSON.stringify(cart));
+        // console.log(pushed)
+          //  window.location.href="cart.html"
+      }
+    }
+    }
   }
  
 // Defining buy now button to cart page
 function buy() {
-    window.location.href="cart.html"
-}
+  var cart=JSON.parse(localStorage.getItem("cartlist")) || [];
+  
 
-document.getElementById("nav2Content1").addEventListener("click",buy)
+  if(cart.length==0) {
+    cart.push(data);
+    localStorage.setItem("cartlist",JSON.stringify(cart));
+    window.location.href="cart.html"
+    // console.log("firsdt")
+    // console.log(pushed)
+  }
+  else{
+  for(var i=0; i<cart.length; i++) {
+    if(JSON.stringify(cart[i])==JSON.stringify(data)) {
+      alert("Product is already added to cart")
+      window.location.href="cart.html"
+      break}
+    else {
+      // console.log("pushed")
+      cart.push(data);
+      localStorage.setItem("cartlist",JSON.stringify(cart));
+      // console.log(pushed)
+         window.location.href="cart.html"
+      }
+    }
+  }
+
+  }
+
+document.getElementById("nav2Content").addEventListener("click",buy)
 
 
 
