@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="testCss.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
     <style>
         #container{
             background-color: #ececec;
@@ -31,41 +37,144 @@
             display: inline-block;
             width: 90%;
             padding: auto;
-            position: absolute;
-            left: 5%;
+            /* position: ; */
+            /* left: 5%; */
             border-top: 5px;
+            margin-left: 5%;
         }
-        img{
-            height: 200px;
-            width: 200px;
+        #cart>img{
+            height: 300px;
+            width: 350px;
+            margin-bottom: 30px;
         }
-        button{
-            border-radius: 800px;
+        #btn{
+            border-radius: 20px;
+            width: 160px;
+            height: 30px;
+            background-color: #ff1744;
+            color: white;
         }
-        button:hover{
-            background-color: brown;
+        #btn2{
+            border-radius: 20px;
+            width: 160px;
+            height: 30px;
+            background-color:white;
+            color:  #ff1744;
+        }
+        #btn:hover,#btn2:hover{
+            box-shadow: 5px 5px 3px #aaaaaa;
         }
     </style>
 </head>
 <body>
-    <div id="container">
-        <div id="nav">NAV</div>
+
+
+    <div id="signUpBar">
+        <div id="nav1">
+            <div id="luxury"><a href="#">Tata CLiQ Luxury</a></div>
+            <div id="box1">
+                <a href="#" id="">CLiQ Cash</a></li>
+                <a href="#">Gift Card</a></li>
+                <a href="#">CLiQ Care</a></li>
+                <a href="#">Track Orders</a></li>
+                <a href="#" id="dummy">Sign in/Sign Up</a></li>
+                <div id="boxhov">
+                    <p id="arrow"></p>
+                    <ul id="loginList">
+                        <li><button>Login/Register</button></li>
+                        <li><i class="fal fa-user-circle"></i>My account</li>
+                        <li><i class="fal fa-briefcase"></i>Order History</li>
+                        <li><i class="fal fa-bookmark"></i>Saved List</li>
+                        <li><i class="fal fa-bell"></i>Alerts & Coupon</li>
+                        <li><i class="fal fa-gift-card"></i>Gift Card</li>
+                        <li><i class="fal fa-sack-dollar"></i>CLiQ Cash</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="searchBar">
+        <div id="nav2box1">
+            <div id="logo"><img src="https://raw.githubusercontent.com/KeshavManuja/Project-Tata_cliq/bharat/logo.png?token=AWJCTQQHWFRUUAJPZAAWSULBRKQ6O" alt=""></div>
+            <span id="nav2box1c" class="cat">Categories <i class="far fa-angle-down" id="farc"></i></span>
+            <span id="nav2box1c" class="brand">Brands <i class="far fa-angle-down" id="farb"></i></span>
+        </div>
+        <div id="nav2box2">
+            <div id="search"><input type="text" placeholder="Search" id="beforeEfc"><i class="far fa-search"></i>
+            </div>
+            <div id="icon"><i id="nav2Content" class="fal fa-bookmark"></i>
+                <i class="fal fa-briefcase" id="nav2Content"></i>
+            </div>
+        </div>
+    </div>
+    <div id="blockshowCat">
+        <ul id="listCat">
+            <li id="navWomen">Women's Fashion<span><i class="far fa-angle-right" id="navCat1"></i></span></li>
+            <li id="navMen">Men's Fashion<span><i class="far fa-angle-right" id="navCat2"></i></span></li>
+            <li id="navTv">TV & Appliances<span><i class="far fa-angle-right" id="navCat3"></i></span></li>
+            <li id="navMobile">Mobile Phones<span><i class="far fa-angle-right" id="navCat4"></i></span></li>
+            <li id="navElectronics">Electronics<span><i class="far fa-angle-right" id="navCat5"></i></span></li>
+            <li id="navKid">Kid's Fashion<span><i class="far fa-angle-right" id="navCat6"></i></span></li>
+            <li id="navBeauty">Beauty<span><i class="far fa-angle-right" id="navCat7"></i></span></li>
+            <li id="navHome">Home Furnishings<span><i class="far fa-angle-right" id="navCat8"></i></span></li>
+        </ul>
+        <div>
+            <table id="cateTable"></table>
+        </div>
+    </div>
+    <div id="blockshow">
+        <ul id="listBrand">
+            <li id="brandTv">TV & Appliances<span><i class="far fa-angle-right" id="navbrn1"></i></span></li>
+            <li id="brandElc">Electronics<span><i class="far fa-angle-right" id="navbrn2"></i></span></li>
+            <li id="brandWomen">Women's Wear<span><i class="far fa-angle-right" id="navbrn3"></i></span></li>
+            <li id="brandMen">Men's Wear<span><i class="far fa-angle-right" id="navbrn4"></i></span></li>
+            <li id="brandFoot">Footwear<span><i class="far fa-angle-right" id="navbrn5"></i></span></li>
+            <li id="brandJwel">Jewellery<span><i class="far fa-angle-right" id="navbrn6"></i></span></li>
+            <li id="brandwatch">Watches & Accessories<span><i class="far fa-angle-right" id="navbrn7"></i></span>
+            </li>
+            <li id="brandKid">Kids<span><i class="far fa-angle-right" id="navbrn8"></i></span></li>
+        </ul>
+        <div>
+            <table id="brandTable"></table>
+        </div>
+        <div id="imgList">
+            <div><img src="https://assets.tatacliq.com/medias/sys_master/images/13957513642014.jpg" alt=""><img
+                    src="https://assets.tatacliq.com/medias/sys_master/images/13957513838622.jpg" alt=""></div>
+            <div><img src="https://assets.tatacliq.com/medias/sys_master/images/26728706506782.jpg" alt=""><img
+                    src="https://assets.tatacliq.com/medias/sys_master/images/13957513838622.jpg" alt=""></div>
+            <div><img src="https://assets.tatacliq.com/medias/sys_master/images/13957513773086.jpg" alt=""><img
+                    src="https://assets.tatacliq.com/medias/sys_master/images/13957513838622.jpg" alt=""></div>
+        </div>
+    </div>
+
+
+
+    <div id="container" style="z-index: -1;">
         <div id="bag">
             <h1>My Bag</h1>
         </div>
         <div id="empty">
             <h3>Your bag is empty! Let’s fill it up shall we?</h3>
-            <div>
+            <div id="cart">
                 <img src="https://www.tatacliq.com/src/cart/components/img/emptycard.e2924cd0225c.png" />
             </div>
-            <button>
-                <h2>Continue Shopping</h2>
+            <button onclick="shopFunction()" id="btn">
+                Continue Shopping
             </button>
-            <button>
-                <h2>View Saved Products</h2>
+            <button id="btn2">
+                View Saved Products
             </button>
         </div>
         </div>
     </div>
 </body>
 </html>
+
+<script src="nav.js"></script>
+<script src="brands.js"></script>
+<script>
+    function shopFunction(){
+    //  document.getElementsById("btn");
+    window.location.href="HomePage.html";
+    }
+</script>
