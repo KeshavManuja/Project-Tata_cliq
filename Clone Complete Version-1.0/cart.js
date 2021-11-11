@@ -39,7 +39,8 @@ var outerdiv=document.getElementById("hh");
 
 // Mapping each cart item
 
-data2.map(function(item){
+
+data2.map(function(item, index){
 
     // Creating maindiv for each entry
     var maindiv=document.createElement("div");
@@ -71,8 +72,8 @@ data2.map(function(item){
         var qty=document.createElement("select")
         qty.setAttribute("id","qunty")
 
-        var opt0=document.createElement("option")
-        opt0.textContent="----"
+        // var opt0=document.createElement("option")
+        // opt0.textContent="----"
 
         var opt1=document.createElement("option")
         opt1.textContent="1"
@@ -88,26 +89,49 @@ data2.map(function(item){
         opt4.textContent="4"
 
         // try
+        
+        var lmw=price.textContent
+        lmw=lmw.split("")
+        lm1=lmw.shift()
+        lmw=lmw.join("")
+        // console.log(+(lmw))
+        pr+=+lmw
+        // qty.addEventListener("change",function(){
+            
+        // for(var z=0; z<data2.length; z++){
+        //     // console.log(data2[z].price)
+        //     // console.log(qty[z].value)
+            
+            
+        //   }
+        // })
+        
+        document.getElementById("totalprice").textContent=pr;
         var kk=0
-        qty.addEventListener("click",function() {
+        qty.addEventListener("change",function() {
         if(Number(qty.value)) {
             var netprice=0;
             if(qty.value!==c)  {
                 q=qty.value
-                
-                
+   a             
+               
                 var a=price.textContent
+                
                 b=a.split("")
                 var c=b.shift()
                 var d=b.join("")
-                
-                pr+=Number(q)*Number(d)
+                console.log(b)
+
+                var npr=Number(q-1)*Number(d)
+                console.log(npr)
+                // pr+=Number(q-1)*Number(d)
                 
                 } 
-                document.getElementById("totalprice").textContent=pr;
-                document.getElementById("subtotal").textContent=pr;}
+                document.getElementById("totalprice").textContent=pr+npr;
+                document.getElementById("subtotal").textContent=pr+npr;}
                 })
                 
+            // console.log(qty.value)
             
             
         // Color option
@@ -118,7 +142,7 @@ data2.map(function(item){
         var size=document.createElement("p")
         size.textContent="Size: UK/IND-7"
         size.style.display="inline-block"
-        qty.append(opt0,opt1,opt2,opt3,opt4)
+        qty.append(opt1,opt2,opt3,opt4)
 
         // Creating a hr tag
         var hr=document.createElement("hr")
@@ -142,6 +166,10 @@ data2.map(function(item){
         var remove=document.createElement("p")
         remove.innerHTML="Remove"
         remove.setAttribute("id","remove")
+        //bybharat
+        remove.addEventListener("click", function(){
+            makeDelete(index)
+        })
 
 
 
@@ -217,7 +245,7 @@ function gotohome() {
 // console.log(netprice)
 document.getElementById("totalprice").textContent
 
-console.log(pr)
+// console.log(pr)
 
 // Continue button
 document.getElementById("Checkout").addEventListener("click",movetopayment)
@@ -247,3 +275,11 @@ if(count==0) {
 
 
 
+
+function makeDelete(index) {
+
+    data2.splice(index, 1)
+    localStorage.setItem("cartlist", JSON.stringify(data2));
+    
+
+}
