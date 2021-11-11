@@ -1,3 +1,4 @@
+
 var pr=0;
     
 // Cart data
@@ -39,8 +40,7 @@ var outerdiv=document.getElementById("hh");
 
 // Mapping each cart item
 
-
-data2.map(function(item, index){
+data2.map(function(item){
 
     // Creating maindiv for each entry
     var maindiv=document.createElement("div");
@@ -72,8 +72,8 @@ data2.map(function(item, index){
         var qty=document.createElement("select")
         qty.setAttribute("id","qunty")
 
-        // var opt0=document.createElement("option")
-        // opt0.textContent="----"
+        var opt0=document.createElement("option")
+        opt0.textContent="----"
 
         var opt1=document.createElement("option")
         opt1.textContent="1"
@@ -89,49 +89,26 @@ data2.map(function(item, index){
         opt4.textContent="4"
 
         // try
-        
-        var lmw=price.textContent
-        lmw=lmw.split("")
-        lm1=lmw.shift()
-        lmw=lmw.join("")
-        // console.log(+(lmw))
-        pr+=+lmw
-        // qty.addEventListener("change",function(){
-            
-        // for(var z=0; z<data2.length; z++){
-        //     // console.log(data2[z].price)
-        //     // console.log(qty[z].value)
-            
-            
-        //   }
-        // })
-        
-        document.getElementById("totalprice").textContent=pr;
         var kk=0
-        qty.addEventListener("change",function() {
+        qty.addEventListener("click",function() {
         if(Number(qty.value)) {
             var netprice=0;
             if(qty.value!==c)  {
                 q=qty.value
-   a             
-               
-                var a=price.textContent
                 
+                
+                var a=price.textContent
                 b=a.split("")
                 var c=b.shift()
                 var d=b.join("")
-                console.log(b)
-
-                var npr=Number(q-1)*Number(d)
-                console.log(npr)
-                // pr+=Number(q-1)*Number(d)
+                
+                pr+=Number(q)*Number(d)
                 
                 } 
-                document.getElementById("totalprice").textContent=pr+npr;
-                document.getElementById("subtotal").textContent=pr+npr;}
+                document.getElementById("totalprice").textContent=pr;
+                document.getElementById("subtotal").textContent=pr;}
                 })
                 
-            // console.log(qty.value)
             
             
         // Color option
@@ -142,7 +119,7 @@ data2.map(function(item, index){
         var size=document.createElement("p")
         size.textContent="Size: UK/IND-7"
         size.style.display="inline-block"
-        qty.append(opt1,opt2,opt3,opt4)
+        qty.append(opt0,opt1,opt2,opt3,opt4)
 
         // Creating a hr tag
         var hr=document.createElement("hr")
@@ -166,10 +143,6 @@ data2.map(function(item, index){
         var remove=document.createElement("p")
         remove.innerHTML="Remove"
         remove.setAttribute("id","remove")
-        //bybharat
-        remove.addEventListener("click", function(){
-            makeDelete(index)
-        })
 
 
 
@@ -245,41 +218,6 @@ function gotohome() {
 // console.log(netprice)
 document.getElementById("totalprice").textContent
 
-// console.log(pr)
-
-// Continue button
-document.getElementById("Checkout").addEventListener("click",movetopayment)
-
-function movetopayment() {
-    window.location.href="checkout.html"
-}
-
-// // ADDRESS
-// var add=JSON.parse(localStorage.getItem("address"))
-// console.log(add)
-// var showadd=add[1]+","+add[4]
-// document.getElementById("addr").textContent=showadd
-
-// coupon
-document.getElementById("codecheck").addEventListener("click",showcode)
-var count=0
-function showcode() {
-if(count==0) {
-    var code=document.createElement("input")
-    code.placeholder="Enter Code Here"
-    code.setAttribute("id","codebox")
-    document.getElementById("codeinput").append(code)
-    count++}
-
-}
+console.log(pr)
 
 
-
-
-function makeDelete(index) {
-
-    data2.splice(index, 1)
-    localStorage.setItem("cartlist", JSON.stringify(data2));
-    
-
-}
