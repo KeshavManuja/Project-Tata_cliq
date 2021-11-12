@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300&display=swap");
 * {
   margin: 0px;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
 }
 
 #signUpBar {
@@ -47,7 +50,7 @@
 }
 #logo {
   display: inline-block;
-  padding: 10px 40px 10px 5%;
+  padding: 10px 70px 10px 60px;
 }
 #nav2box1 {
   display: flex;
@@ -91,16 +94,42 @@
   background-color: white;
 }
 
-#nav2Content {
-  margin: 20px 30px;
+#nav2ContentImg1 {
+  background-image: url("image/bookmark.png");
+  margin: 0px 20px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+
+  height: 50px;
+  width: 50px;
+
+  position: relative;
+}
+#nav2ContentImg2 {
+  background-image: url("image/bag.png");
+  margin: 0px 30px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  height: 50px;
+  width: 50px;
+
+  position: relative;
 }
 #icon {
   /* display: inline-block; */
   float: right;
+  display: flex;
 }
-/* #nav2Content {
-    padding: 0px 30px;
-   }  */
+
+#cartCounter1,
+#cartCounter2 {
+  padding: 0px 5px;
+  position: absolute;
+  right: 15px;
+  background-color: #ff1744;
+  border-radius: 50%;
+}
+
 #dummytext {
   line-height: 50px;
   /* color: white; */
@@ -171,6 +200,7 @@
 
 #boxhov {
   margin-top: -10px;
+  width: 300px;
   /* padding: 50px; */
   position: absolute;
   margin-left: 405px;
@@ -188,10 +218,10 @@
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: absolute;
-  margin-left: 173px;
+  margin-left: 200px;
   display: none;
   /* position: sticky; */
-  top: 95px;
+  top: 63px;
   z-index: 1;
 
   background-color: white;
@@ -210,6 +240,7 @@
   margin-right: 40px;
   text-decoration: none;
   width: 250px;
+  font-size: 15px;
 }
 
 #brandTable tr th,
@@ -228,7 +259,7 @@
 #blockshow #listBrand li {
   padding: 19px 0px 19px 19px;
   list-style: none;
-  width: 200px;
+  width: 185px;
   border-bottom: 1px solid gray;
 }
 #listBrand li {
@@ -257,10 +288,11 @@
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: absolute;
-  margin-left: 173px;
+  margin-left: 200px;
   display: none;
+
   background-color: white;
-  top: 95px;
+  top: 63px;
   /* position: sticky; */
   /* background-color: #fff; */
   z-index: 3;
@@ -270,9 +302,9 @@
 }
 
 #listCat li {
-  padding: 19px 0px 19px 19px;
+  padding: 18px 0px 18px 19px;
   list-style: none;
-  width: 200px;
+  width: 185px;
   border-bottom: 1px solid gray;
   color: gray;
   font-weight: bold;
@@ -293,6 +325,7 @@
   color: gray;
   margin-right: 30px;
   background-color: white;
+  font-size: 14px;
 }
 #cateTable tr th a {
   text-decoration: none;
@@ -300,6 +333,7 @@
   text-align: left;
   margin-right: 30px;
   background-color: white;
+  font-size: 15px;
 }
 #cateTable tr th {
   text-align: left;
