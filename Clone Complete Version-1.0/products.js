@@ -11,6 +11,9 @@
  document.getElementById("nav2ContentImg1").addEventListener("click",function(){
   window.location.href="wishlist.html"
 })
+document.getElementById("nav2ContentImg2").addEventListener("click",function(){
+  window.location.href="cart.html"
+})
 
 
 
