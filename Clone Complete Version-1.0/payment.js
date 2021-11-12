@@ -59,7 +59,7 @@ function checkdetails() {
         // console.log(h)
         // window.localStorage.removeItem('cartlist')
         
-        window.location.href="HomePage.html"
+        window.location.href="Index.html"
         }
     }
 
@@ -76,6 +76,10 @@ else {
     // console.log(h)
     // window.localStorage.removeItem('cartlist')
     
-    window.location.href="HomePage.html"
+    window.location.href="Index.html"
     }
 }
+
+document.getElementById("nav2logo").addEventListener("click",function(){
+    window.location.href="Index.html"
+    })

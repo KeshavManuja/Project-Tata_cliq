@@ -54,3 +54,8 @@ document.getElementById("red").addEventListener("click",movetoback)
 function movetoback() {
     window.location.href="cart.html"
 }
+
+
+document.getElementById("nav2logo").addEventListener("click",function(){
+    window.location.href="Index.html"
+    })

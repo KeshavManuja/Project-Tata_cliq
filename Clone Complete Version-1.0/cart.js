@@ -304,6 +304,8 @@ function makeDelete(index) {
 document.getElementById("nav2logo").addEventListener("click",function(){
     window.location.href="Index.html"
   })
-
+  var add=JSON.parse(localStorage.getItem("address"))
+  console.log(add)
+  document.getElementById("addr").textContent=`${add[1]}`+ " ,"+`${add[add.length-1]}`
 
 

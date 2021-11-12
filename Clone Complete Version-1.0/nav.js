@@ -24,7 +24,7 @@ var categoriesArray=[
     '<tr>  <td><a href="#">Running Shoes</a></td>  <td><a href="#">Casual Jackets</a></td>  <td><a href="#">Partywear Watches</a></td>  <td><a href="#">Belts</a></td>   </tr>',
     '<tr>  <td><a href="#">Training Shoes</a></td>  <td><a href="#">Formal Shirts</a></td>  <td><a href="#">Digital watches</a></td>  <td><a href="#">Hats & Caps</a></td>   </tr>',
     '<tr>  <td><a href="#">Sports Shoes</a></td>  <td><a href="#">Formal Trousers</a></td>  <td><a href="#">Multifunctional watches</a></td>  <td><a href="#">Ties & Cufflinks</a></td>   </tr>',
-    '<tr>  <td><a href="https://www.tatacliq.com/kurtis-&-kurtas/c-msh1012100?&icid2=catd:nav:regu:wnav:m1012100:mulb:bst:01:R1">Boots</a></td>  <th><a href="#">Inner & Nightwear</a></th>  <th><a href="#">The Watch Store</a></th>  <td><a href="#">Writing Instruments</a></td>   </tr>',
+    '<tr>  <td><a href="ProductPage.html">Boots</a></td>  <th><a href="#">Inner & Nightwear</a></th>  <th><a href="#">The Watch Store</a></th>  <td><a href="#">Writing Instruments</a></td>   </tr>',
     `<tr>  <td><a href="#">Flip Flop</a></td>  <th><a href="#">View All Clothing</a></th>  <th><a href="#">Bags & Backpacks</a></th>  <td><a href="#">Men's Gift Sets</a></td>   </tr>`,
     '<tr>  <th><a href="#">Ethnic Wear</a></th>  <th><a href="#">Sports Wear</a></th>  <td><a href="#">Backpacks</a></td>  <th><a href="#">Jewellery</a></th>   </tr>',
     '<tr>  <td><a href="#">Kurta</a></td>  <td><a href="#">T-shirts & Jerseys</a></td>  <td><a href="#">Wallets</a></td>  <td><a href="#">Mens Jewellery</a></td>   </tr>',
@@ -280,5 +280,51 @@ intext='<input type="text" placeholder="Search" id="beforeEfc"><i class="far fa-
 
 
 
+window.addEventListener('load', (event) => {
 
+  var cart=JSON.parse(localStorage.getItem("cartlist")) || [];
+  //  fav.push(data);
+  if(cart.length!==0) {
+    document.getElementById("cartCounter2").style.display="block"
+   document.getElementById("cartCounter2").textContent=cart.length;}
+    else{
+      document.getElementById("cartCounter2").style.display="none"
+    }
+
+
+
+   var fav=JSON.parse(localStorage.getItem("favlist")) || [];
+   if(fav.length!==0) {
+    document.getElementById("cartCounter1").style.display="block"
+   document.getElementById("cartCounter1").textContent=fav.length;}
+    else{
+      document.getElementById("cartCounter1").style.display="none"
+    }
+   //  fav.push(data);
+    document.getElementById("cartCounter1").textContent=fav.length;
+});
+
+// Home
+document.getElementById("logo").addEventListener("click",function(){
+window.location.href="Index.html"
+})
+
+
+document.getElementById("nav2ContentImg1").addEventListener("click",function(){
+  window.location.href="wishlist.html"
+})
+// Clear=================
+
+// cart--------------------
+document.getElementById("nav2ContentImg2").addEventListener("click",function(){
+  var cartitems=JSON.parse(localStorage.getItem("cartlist")) || []
+  if(cartitems.length==0) {
+    window.location.href="emptycart.html"
+  }
+  else{
+    window.location.href="cart.html"
+  }
+  
+  
+})
 
