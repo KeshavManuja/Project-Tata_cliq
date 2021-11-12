@@ -11,7 +11,10 @@ for(var i=1;i<a.length; i++) {
 }
 line.push(a[0].value)
 localStorage.setItem("address",JSON.stringify(line))
+
 window.location.href="payment.html"}
+
+
 
 
     

@@ -291,3 +291,26 @@ function crosSearch(){
 
 
 
+window.addEventListener('load', (event) => {
+
+  var cart=JSON.parse(localStorage.getItem("cartlist")) || [];
+  //  fav.push(data);
+  if(cart.length!==0) {
+    document.getElementById("cartCounter2").style.display="block"
+   document.getElementById("cartCounter2").textContent=cart.length;}
+    else{
+      document.getElementById("cartCounter2").style.display="none"
+    }
+
+
+
+   var fav=JSON.parse(localStorage.getItem("favlist")) || [];
+   if(fav.length!==0) {
+    document.getElementById("cartCounter1").style.display="block"
+   document.getElementById("cartCounter1").textContent=fav.length;}
+    else{
+      document.getElementById("cartCounter1").style.display="none"
+    }
+   //  fav.push(data);
+    document.getElementById("cartCounter1").textContent=fav.length;
+});

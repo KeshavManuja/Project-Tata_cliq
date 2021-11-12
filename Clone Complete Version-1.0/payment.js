@@ -3,6 +3,7 @@ var div = document.getElementById("first")
 var arrow = document.getElementById("arrow")
 var arrowUpper = document.getElementById("arrowUpper")
 var count = 0;
+
 function myFnct() {
     count++
     if (count % 2 == 1) {
@@ -54,6 +55,10 @@ function checkdetails() {
 
     else {
         alert("Your order is placed successfully")
+        localStorage.removeItem("cartlist")
+        // console.log(h)
+        // window.localStorage.removeItem('cartlist')
+        
         window.location.href="HomePage.html"
         }
     }
@@ -67,6 +72,10 @@ var cvv=document.getElementById("Back").value
 if(cvv.length!=3 && cardlength.length!=12) alert("Please enter valid credtionals")
 else {
     alert("Your order is placed successfully")
+    localStorage.removeItem("cartlist")
+    // console.log(h)
+    // window.localStorage.removeItem('cartlist')
+    
     window.location.href="HomePage.html"
     }
 }
