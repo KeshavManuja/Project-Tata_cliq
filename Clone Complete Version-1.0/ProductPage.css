@@ -104,6 +104,7 @@ hr {
   position: sticky;
   top: 10%;
   margin-left: 10%;
+  z-index: -1;
   /* border:1px solid gray;   */
 }
 #flex {
