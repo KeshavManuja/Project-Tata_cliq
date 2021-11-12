@@ -56,7 +56,7 @@ document.getElementById("tickbtn1").addEventListener("click",hy1)
  localStorage.setItem("favlist",JSON.stringify(fav));
   
  }
- document.getElementById("nav2Content2").addEventListener("click",function(){
+ document.getElementById("nav2ContentImg1").addEventListener("click",function(){
   window.location.href="wishlist.html"
 })
 //  document.getElementById("fav").addEventListener("click",function(){
