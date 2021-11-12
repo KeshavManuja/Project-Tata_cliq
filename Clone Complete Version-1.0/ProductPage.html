@@ -10,7 +10,9 @@
 
     
 
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Montserrat:wght@200&family=Rubik&display=swap" rel="stylesheet">
     <title>Tatacliq</title>
     <link rel="stylesheet" href="testCss.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -25,6 +27,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
 <link rel="stylesheet" href="ProductPage.css">
+<link rel="stylesheet" href="font-family.css">
 
     </head>
 
@@ -141,10 +144,24 @@
             <p>Footwear</p>
             <p id = "product">43421 products</p>
           </div>
+        
+        <div id="select">
+            <p style="display: inline-block;">Sort by:</p>
+        
+          <select  id="sorting" onchange=pricesort()>
+            <option>----------------------------------------------</option>
+            <option> Price High to Low</option>
+            <option> Price Low to High</option>
+            <option> Rating High to Low</option>
+            <option> Rating Low to High</option>
+         </select> 
+        </div>
+       
         </div>
 
-        
+   
 <div id = "first">
+    <div id="flex">
     <div id = "filter">
         <p>Filter</p>
         <a href="">Clear All</a>
@@ -159,16 +176,16 @@
         <div id ="category">Category</div>
         <img id = "plus" src="https://maxcdn.icons8.com/Share/icon/ios7/Science/plus_math1600.png" alt="">
         <img id = "sub" src="https://cdn-icons-png.flaticon.com/512/402/402590.png" alt="">
-
-        <div id = "box">
-            <input type="radio"/>
-            <span>Women</span>
-        </div>
-
-        <div id = "box2">
-            <input type="radio"/>
-            <span>Men</span>
-        </div>
+        <div id="box">
+      <input type="radio" name="bharat">
+    <label for="">Men</label>
+    <br>
+    <input type="radio" name="bharat">
+    <label for="">Women</label>
+    <br>
+    <input type="radio" name="bharat">
+    <label for="">Child</label>
+</div>
     
     
         <div id = "box1">
@@ -271,24 +288,44 @@
     </div>
     <hr>
 
-    <div id = "Size" class = "same">Size</div>
-    <img class ="sameplus" src="https://maxcdn.icons8.com/Share/icon/ios7/Science/plus_math1600.png" alt="">
-    <hr>
-    <div  id = "Fastening" class = "same">Fastening</div>
-    <img class ="sameplus" src="https://maxcdn.icons8.com/Share/icon/ios7/Science/plus_math1600.png" alt="">
-    <hr>
-    <div  id = "HeelHeight"  class = "same">Heel Height</div>
-    <img class ="sameplus" src="https://maxcdn.icons8.com/Share/icon/ios7/Science/plus_math1600.png" alt="">
-    <hr>
-    <div   id = "HeelType" class = "same">Heel Type</div>
-    <img class ="sameplus" src="https://maxcdn.icons8.com/Share/icon/ios7/Science/plus_math1600.png" alt="">
-    <hr>
-    <div   id = "SoleMaterial" class = "same">Sole Material</div>
-    <img class ="sameplus" src="https://maxcdn.icons8.com/Share/icon/ios7/Science/plus_math1600.png" alt="">
-    <hr>
-    <div  id = "TipSize" class = "same">Tip Size</div>
-    <img class ="sameplus" src="https://maxcdn.icons8.com/Share/icon/ios7/Science/plus_math1600.png" alt="">
+   <div id = "size">
+       <p>Size</p>
+    <img class ="samePlus" src="https://maxcdn.icons8.com/Share/icon/ios7/Science/plus_math1600.png" alt="">
+</div>
+<hr>
 
+<div id = "Fastening">
+    <p>Fastening</p>
+ <img class ="samePlus" src="https://maxcdn.icons8.com/Share/icon/ios7/Science/plus_math1600.png" alt="">
+</div>
+<hr>
+
+<div id = "HeelHeight">
+    <p>HeelHeight</p>
+ <img class ="samePlus" src="https://maxcdn.icons8.com/Share/icon/ios7/Science/plus_math1600.png" alt="">
+</div>
+<hr>
+
+<div id = "HeelType">
+    <p>HeelType</p>
+ <img class ="samePlus" src="https://maxcdn.icons8.com/Share/icon/ios7/Science/plus_math1600.png" alt="">
+</div>
+<hr>
+
+<div id = "SoleMaterial">
+    <p>SoleMaterial</p>
+ <img class ="samePlus" src="https://maxcdn.icons8.com/Share/icon/ios7/Science/plus_math1600.png" alt="">
+</div>
+<hr>
+
+<div id = "TipSize">
+    <p>TipSize</p>
+ <img class ="samePlus" src="https://maxcdn.icons8.com/Share/icon/ios7/Science/plus_math1600.png" alt="">
+</div>
+
+
+
+</div>
 </div>
 
 
@@ -302,42 +339,7 @@
 </html>
 
 <script>
-    function first() {
-        var image = document.getElementById("sliding1")
-        image.setAttribute("src", "https://assets.tatacliq.com/medias/sys_master/images/31655829798942.jpg")
-    }
 
-    function second() {
-        var image = document.getElementById("sliding1")
-        image.setAttribute("src", "https://assets.tatacliq.com/medias/sys_master/images/31653739069470.jpg")
-    }
-
-    function third() {
-        var image = document.getElementById("sliding1")
-        image.setAttribute("src", "https://assets.tatacliq.com/medias/sys_master/images/31653739003934.jpg")
-    }
-
-    function fourth() {
-        var image = document.getElementById("sliding1")
-        image.setAttribute("src", "https://assets.tatacliq.com/medias/sys_master/images/31653739790366.jpg")
-    }
-
-    function fifth() {
-        var image = document.getElementById("sliding1")
-        image.setAttribute("src", "https://assets.tatacliq.com/medias/sys_master/images/31653739659294.jpg")
-    }
-
-    function sixth() {
-        var image = document.getElementById("sliding1")
-        image.setAttribute("src", "https://assets.tatacliq.com/medias/sys_master/images/31653739135006.jpg")
-    }
-
-    setInterval(first, 2000)
-    setInterval(second, 4000)
-    setInterval(third, 6000)
-    setInterval(fourth, 8000)
-    setInterval(fifth, 10000)
-    setInterval(sixth, 12000)
 </script>
 
 <script src="nav.js"></script>

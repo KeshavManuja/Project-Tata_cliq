@@ -267,15 +267,19 @@ var data = [
 ]
 
 localStorage.setItem("data",JSON.stringify(data))
-
+var data2=JSON.parse(localStorage.getItem("data"))
 var Scnd = document.getElementById("Scnd")
 var maindiv=document.createElement("div")
+
+
 
 maindiv.setAttribute("id","container")
 // var count=0
 // var links=["P1.html","P2.html","P3.html","P4.html","P5.html","P6.html","P7.html","P8.html","P9.html","P10.html","P11.html","P12.html"
 // ,"P13.html","P14.html","P15.html","P16.html"]
-data.map(function(item) {
+displayitem(data2)
+function displayitem(data2) {
+data2.map(function(item) {
 
 var a=document.createElement("div")
 a.setAttribute("id","dic")
@@ -298,9 +302,11 @@ price.textContent=item.price
 
 var ratings=item.rating
 var btn=document.createElement("button")
+btn.setAttribute("id","rating")
 var ii=document.createElement("i")
 ii.setAttribute("class","material-icons")
 ii.innerHTML="&#xe83a"
+
 btn.append(ratings,ii)
 
 
@@ -315,10 +321,112 @@ a.append(img,h2,h3,price,btn);
 
 
 img.addEventListener("click",specificproduct)
-console.log(links)
+// console.log(links)
 function specificproduct() {
     
     window.location.href=links
     }
     // count++
+
 })
+}
+
+
+
+
+//   Sorting all kinds here
+function pricesort() {
+    
+
+    //     //   Keeping parent div empty
+    document.getElementById("container").textContent="";
+
+
+    var selected=document.getElementById("sorting").value
+    console.log(selected)
+
+        //   Sorting price Low to high
+        if(selected==="Price Low to High") {
+            data2=data2.sort(function(a,b){
+                var d=a.price.split("")
+                d.shift()
+                var final_a=d.join("")
+
+                var e=b.price.split("")
+                e.shift()
+                var final_b=e.join("")
+                
+                
+                console.log(a.price,b.price,final_a,final_b)
+                return final_a - final_b
+            })
+        }
+    
+            //   Sorting price High to low
+      else if(selected==="Price High to Low") {
+        data2=data2.sort(function(a,b){
+            var d=a.price.split("")
+            d.shift()
+            var final_a=d.join("")
+
+            var e=b.price.split("")
+            e.shift()
+            var final_b=e.join("")
+            
+            
+            console.log(a.price,b.price,final_a,final_b)
+            return final_b - final_a
+        })
+        }
+    
+        //   Sorting rating high to low
+        else if(selected==="Rating High to Low") {
+            data2=data2.sort(function(a,b){
+                return b.rating-a.rating
+            })
+            console.log(data2)}
+       //      //   Sorting rating low to high
+        else{
+            data2=data2.sort(function(a,b) {
+                return a.rating-b.rating
+            })
+            console.log(data2)}
+   
+       //  Mapping and displaying as per selected criteria
+        displayitem(data2)
+    
+    }
+
+    
+
+    
+    
+
+
+
+      
+
+
+
+
+
+        
+//     }
+
+
+    
+
+    
+    
+
+
+
+      
+
+
+
+
+
+        
+//     }
+

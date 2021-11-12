@@ -106,7 +106,7 @@ data2.map(function(item, index){
         //   }
         // })
         
-        document.getElementById("totalprice").textContent=pr;
+        document.getElementById("totalprice").innerHTML=pr;
         var kk=0
         qty.addEventListener("change",function() {
         if(Number(qty.value)) {
@@ -155,6 +155,9 @@ data2.map(function(item, index){
         // Creating Save to wishlist and remove tag
         var book=document.createElement("img");
         book.setAttribute("src","https://cdn-icons-png.flaticon.com/512/3440/3440293.png");
+        book.style.cursor="pointer";
+        // book.addEventListener("click",function(){
+        //     })
         book.setAttribute("width","10%");
         book.style.display="inline-block";
         // Creating Save to wishlist text
@@ -251,6 +254,8 @@ document.getElementById("totalprice").textContent
 document.getElementById("Checkout").addEventListener("click",movetopayment)
 
 function movetopayment() {
+    var finalrate=document.getElementById("totalprice")
+    localStorage.setItem("bagtotal",finalrate.textContent)
     window.location.href="checkout.html"
 }
 
@@ -265,13 +270,25 @@ document.getElementById("codecheck").addEventListener("click",showcode)
 var count=0
 function showcode() {
 if(count==0) {
-    var code=document.createElement("input")
-    code.placeholder="Enter Code Here"
-    code.setAttribute("id","codebox")
-    document.getElementById("codeinput").append(code)
+    var code=document.createElement("input");
+    code.placeholder="Enter Code Here";
+    code.setAttribute("id","codebox");
+    document.getElementById("codeinput").append(code);
+
+    var apply=document.createElement("button");
+    apply.textContent="Apply now";
+    document.getElementById("btn").append(apply);
     count++}
 
+
+
 }
+// var apply=document.createElement("button")
+// apply.textContent="Apply"
+// document.getElementById("codeinput").append(apply)
+// var t1=document.getElementById("codebox").value
+// console.log(t1)
+
 
 
 
@@ -283,3 +300,7 @@ function makeDelete(index) {
     
 
 }
+// 
+
+
+

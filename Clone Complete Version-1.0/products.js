@@ -2,15 +2,18 @@
    
   //  fav button-------------->>
  
-  document.getElementById("favourite").addEventListener("click",sO);
- function sO(){
-  var fav=JSON.parse(localStorage.getItem("favlist")) || [];
-  fav.push(data);
- localStorage.setItem("favlist",JSON.stringify(fav));
-  
- }
- document.getElementById("nav2Content2").addEventListener("click",function(){
-  window.location.href="wishlist1.html"
+  function fav(){
+       var fav =JSON.parse(localStorage.getItem("favItems")) || [];
+
+       
+       document.addEventListener("click",addtoFav)
+         function addtoFav(item){
+      fav.push(item);
+      localStorage.setItem("favItems",JSON.stringify(fav))
+  }
+ } 
+ document.getElementById("fav").addEventListener("click",function(){
+   window.location.href="fav1.html"
 })
 
 
@@ -77,7 +80,7 @@ function buy() {
 
   }
 
-document.getElementById("nav2Content1").addEventListener("click",buy)
+document.getElementById("nav2Content").addEventListener("click",buy)
 
 
 

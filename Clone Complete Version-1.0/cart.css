@@ -37,6 +37,7 @@ body{
     margin-top: 20px;
     border-radius: 5px;
     display: flex;
+
     line-height: 35px;
     }
 
@@ -172,4 +173,9 @@ body{
     display: flex;
     flex-direction: column;
     
+}
+#wishlistimg{
+    width: 10%;
+    display: inline-block;
+    cursor: pointer;
 }

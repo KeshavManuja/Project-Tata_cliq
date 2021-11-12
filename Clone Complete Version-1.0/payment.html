@@ -2,378 +2,17 @@
 <html lang="en">
 
 <head>
-    <title>Document</title>
-
+    <title>Payment</title>
+    <link rel="stylesheet" href="font-family.css">
     <link rel="stylesheet" href="nav2.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="payment.css">
 
 
 
     <style>
-        #container {
-            height: 40px;
-            width: 900px;
-            margin-bottom: 5px;
-            /* border:1px solid red; */
-            margin-left: 30px;
-            margin-top: 10px;
-        }
-
-        #card {
-            height: 30px;
-            width: 30px;
-            display: inline-block;
-            margin-right: 15px;
-        }
-
-        #container>div {
-            display: inline-block;
-            vertical-align: 9px;
-            margin-right: 670px;
-        }
-
-        #arrow {
-            height: 30px;
-            width: 30px;
-            display: inline-block;
-        }
-
-        #arrowUpper {
-            height: 25px;
-            width: 25px;
-            display: none;
-        }
-
-        #first {
-            height: 100px;
-            width: 500px;
-            border-top: 300px;
-            /* border:1px solid red; */
-            display: none;
-            margin-left: 30px;
-        }
-
-        #cardNumber {
-            height: 30px;
-            width: 210px;
-            margin-right: 15px;
-            margin-bottom: 10px;
-        }
-
-        #name {
-            height: 30px;
-            width: 210px;
-            margin-right: 15px;
-        }
-
-        #select {
-            width: 130px;
-            height: 30px;
-        }
-
-        #year {
-            width: 120px;
-            height: 30px;
-        }
-
-        #ccv {
-            width: 100px;
-            height: 30px;
-            margin-right: 20px;
-        }
-
-        #btn {
-            width: 100px;
-            height: 30px;
-            border-radius: 20px;
-            background-color: #ff1744;
-            border: 1px solid #ff1744;
-            color: white;
-        }
-
-        #DebitContainer {
-            height: 40px;
-            width: 900px;
-            margin-bottom: 5px;
-            /* border:1px solid red; */
-            margin-left: 30px;
-            margin-top: 10px;
-        }
-
-        #Debit {
-            height: 30px;
-            width: 30px;
-            display: inline-block;
-            margin-right: 15px;
-        }
-
-        #DebitContainer>div {
-            display: inline-block;
-            vertical-align: 9px;
-            margin-right: 670px;
-        }
-
-        #Lower {
-            height: 30px;
-            width: 30px;
-            display: inline-block;
-        }
-
-        #Upper {
-            height: 25px;
-            width: 25px;
-            display: none;
-        }
-
-        #Line1 {
-            height: 100px;
-            width: 500px;
-            margin-left: 30px;
-            display: none;
-        }
-
-        #DebitNumber {
-            height: 30px;
-            width: 210px;
-            margin-right: 15px;
-            margin-bottom: 10px;
-        }
-
-        #DebitName {
-            height: 30px;
-            width: 210px;
-            margin-right: 15px;
-        }
-
-        #ExpiryM {
-            width: 130px;
-            height: 30px;
-        }
-
-        #ExpiryY {
-            width: 120px;
-            height: 30px;
-        }
-
-        #Back {
-            width: 100px;
-            height: 30px;
-            margin-right: 20px;
-        }
-
-        #Button {
-            width: 100px;
-            height: 30px;
-            border-radius: 20px;
-            background-color: #ff1744;
-            border: 1px solid #ff1744;
-            color: white;
-        }
-
-        #EMIpytm {
-            height: 40px;
-            width: 900px;
-            margin-bottom: 5px;
-            /* border:1px solid red; */
-            margin-left: 30px;
-            margin-top: 10px;
-        }
-
-        #EMI {
-            height: 30px;
-            width: 30px;
-            display: inline-block;
-            margin-right: 15px;
-        }
-
-        #EMIpytm>div {
-            display: inline-block;
-            vertical-align: 9px;
-            margin-right: 710px;
-        }
-
-        #low {
-            height: 30px;
-            width: 30px;
-            display: inline-block;
-        }
-
-        #Pytm_UPI {
-            height: 40px;
-            width: 900px;
-            margin-bottom: 5px;
-            /* border:1px solid red; */
-            margin-left: 30px;
-            margin-top: 10px;
-        }
-
-        #UPI {
-            height: 30px;
-            width: 30px;
-            display: inline-block;
-            margin-right: 15px;
-        }
-
-        #Pytm_UPI>div {
-            display: inline-block;
-            vertical-align: 9px;
-            margin-right: 690px;
-        }
-
-        #arrow_lower {
-            height: 30px;
-            width: 30px;
-            display: inline-block;
-        }
-
-        #netbanking {
-            height: 40px;
-            width: 900px;
-            margin-bottom: 5px;
-            /* border:1px solid red; */
-            margin-left: 30px;
-            margin-top: 10px;
-        }
-
-        #net {
-            height: 30px;
-            width: 30px;
-            display: inline-block;
-            margin-right: 15px;
-        }
-
-        #netbanking>div {
-            display: inline-block;
-            vertical-align: 9px;
-            margin-right: 650px;
-        }
-
-        #arrowlower {
-            height: 30px;
-            width: 30px;
-            display: inline-block;
-        }
-
-        #CashOnDelivery {
-            height: 40px;
-            width: 900px;
-            margin-bottom: 5px;
-            /* border:1px solid red; */
-            margin-left: 30px;
-            margin-top: 10px;
-        }
-
-        #COD {
-            height: 30px;
-            width: 30px;
-            display: inline-block;
-            margin-right: 15px;
-        }
-
-        #CashOnDelivery>div {
-            display: inline-block;
-            vertical-align: 9px;
-            margin-right: 620px;
-        }
-
-        #codarrow {
-            height: 30px;
-            width: 30px;
-            display: inline-block;
-        }
-
-
-        #box {
-            margin-left: 30px;
-            margin-top: 10px;
-        }
-
-        #box>div {
-            display: inline-block;
-            margin-right: 5px;
-        }
-
-        #number {
-            height: 20px;
-            width: 30px;
-            border: 2px solid black;
-            border-radius: 150px;
-            text-align: center;
-            font-weight: 600;
-        }
-
-        #text {
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        #main {
-            /* margin: auto; */
-            margin: 10px;
-            /* margin-top: 6%; */
-            width: 900px;
-            /* border: 1px solid gray; */
-            display: flex;
-            flex-direction: column;
-            background-color: white;
-            border-radius: 5px;
-        }
-
-        hr {
-            width: 90%;
-            margin: auto;
-            margin-top: 10px;
-        }
-
-        /* style by bharat */
-        body {
-            background-color: #ececec;
-        }
-
-        .paymentConti {
-            display: flex;
-        }
-
-        .cartTotalInfo {
-            width: 300px;
-            height: 300px;
-            margin-top: 10px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-        }
-
-        .cartPricing {
-            margin: 20px 10px;
-            display: flex;
-            justify-content: space-between;
-            font-size: 18px;
-
-        }
-
-        .cartPricing p {
-            margin: 0;
-        }
-
-        .greenDisco {
-            margin: 30px 0px;
-            font-size: 18px;
-            color: green;
-        }
-
-        .cartTotalPrice {
-            display: flex;
-            justify-content: space-between;
-            margin: 30px 0px;
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        #titlePayment {
-            margin: 20px 0px 20px 15px;
-        }
+      
     </style>
 </head>
 
@@ -399,7 +38,7 @@
             </ul>
 
         </div>
-
+        </div>
 
 
         <h1 id="titlePayment">Checkout</h1>
@@ -419,7 +58,7 @@
                         <img id="card" src="https://cdn-icons-png.flaticon.com/512/633/633611.png" alt="">
                         <div>Credit card</div>
 
-                        <img id="arrow" src="arrow-down.png" alt="">
+                        <img id="arrow" src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1636618883~hmac=2cfe3f018f883063f5ff0d1769b44702" alt="">
                         <img id="arrowUpper" src="https://cdn-icons-png.flaticon.com/512/130/130906.png" alt="">
                     </div>
                     <div id="first">
@@ -471,7 +110,7 @@
                         <img id="Debit" src="https://cdn-icons-png.flaticon.com/512/3037/3037255.png" alt="">
                         <div>Debit Card</div>
 
-                        <img id="Lower" src="arrow-down.png" alt="">
+                        <img id="Lower" src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1636618883~hmac=2cfe3f018f883063f5ff0d1769b44702" alt="">
                         <img id="Upper" src="https://cdn-icons-png.flaticon.com/512/130/130906.png" alt="">
                     </div>
                     <div id="Line1">
@@ -522,7 +161,7 @@
                             alt="">
                         <div>EMI</div>
 
-                        <img id="low" src="arrow-down.png" alt="">
+                        <img id="low" style="float: right;margin-right: 70px;" src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1636618883~hmac=2cfe3f018f883063f5ff0d1769b44702" alt="">
                     </div>
                     <hr>
 
@@ -530,7 +169,7 @@
                         <img id="UPI" src="https://gadgetstouse.com/wp-content/uploads/2016/11/UPI-Logo.jpg" alt="">
                         <div>UPI ID</div>
 
-                        <img id="arrow_lower" src="arrow-down.png" alt="">
+                        <img id="arrow_lower" style="float: right;margin-right: 70px;"src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1636618883~hmac=2cfe3f018f883063f5ff0d1769b44702" alt="">
                     </div>
                     <hr>
 
@@ -538,7 +177,7 @@
                         <img id="net" src="https://cdn-icons-png.flaticon.com/512/2261/2261588.png" alt="">
                         <div>Net Banking</div>
 
-                        <img id="arrowlower" src="arrow-down.png" alt="">
+                        <img id="arrowlower"style="float: right;margin-right: 70px;" src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1636618883~hmac=2cfe3f018f883063f5ff0d1769b44702" alt="">
                     </div>
                     <hr>
 
@@ -546,7 +185,7 @@
                         <img id="COD" src="cash-on-delivery.png" alt="">
                         <div>Cash On Delivery</div>
 
-                        <img id="codarrow" src="arrow-down.png" alt="">
+                        <img id="codarrow" style="float: right;margin-right: 70px;"src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1636618883~hmac=2cfe3f018f883063f5ff0d1769b44702" alt="">
                     </div>
                 </div>
             </div>
@@ -558,7 +197,7 @@
                     </div>
                     <div class="cartPricing">
                         <p>Shipping Charge</p>
-                        <p class="cartRflot">0.00</p>
+                        <p >0.00</p>
                     </div>
                     <div class="cartPricing">
                         <p>Bag Subtotal</p>
@@ -566,7 +205,7 @@
                     </div>
                     <div class="cartPricing">
                         <p>Product Discount(s)</p>
-                        <p class="cartRflot">0.00</p>
+                        <p>0.00</p>
                     </div>
                     <div class="greenDisco">You will save ₹961.00 on this order</div>
                     <hr>
@@ -584,62 +223,6 @@
 
 </html>
 
-<script>
-    var span = document.getElementById("container").addEventListener("click", myFnct)
-    var div = document.getElementById("first")
-    var arrow = document.getElementById("arrow")
-    var arrowUpper = document.getElementById("arrowUpper")
-    var count = 0;
-    function myFnct() {
-        count++
-        if (count % 2 == 1) {
-            arrow.style.display = "none";
-            arrowUpper.style.display = "inline-block"
-            div.style.display = "inline-block";
-        } else {
-            arrowUpper.style.display = "none";
-            arrow.style.display = "inline-block";
-            div.style.display = "none";
-        }
-    }
-
-
-
-
-    document.getElementById("DebitContainer").addEventListener("click", showData)
-    var Dee = document.getElementById("Line1")
-    var Lower = document.getElementById("Lower")
-    var Upper = document.getElementById("Upper")
-    var count = 0;
-    function showData() {
-        count++
-        if (count % 2 == 1) {
-            Lower.style.display = "none";
-            Upper.style.display = "inline-block"
-            Dee.style.display = "inline-block";
-        } else {
-            Upper.style.display = "none";
-            Lower.style.display = "inline-block";
-            Dee.style.display = "none";
-        }
-    }
-    document.getElementById("btn").addEventListener("click", checkdetails)
-    function checkdetails() {
-        // Checking card number length
-        var cardlength = document.getElementById("cardNumber").value
-        var cvv = document.getElementById("ccv").value
-        if (cardlength.length != 12 || cvv.length != 3) alert("Please enter valid credtionals")
-
-        else alert("Your order is placed successfully")
-    }
-
-    // document.getElementById("Button").addEventListener("click",dcheckdetails)
-
-    // function dcheckdetails() {
-    //     // Checking card number length
-    // var cardlength=document.getElementById("DebitNumber").value
-    // var cvv=document.getElementById("back").value
-    // if(cvv.length!=3 && cardlength.length!=12) alert("Please enter valid credtionals")
-    // else alert("Your order is placed successfully")}
+<script src="payment.js">
 
 </script>
