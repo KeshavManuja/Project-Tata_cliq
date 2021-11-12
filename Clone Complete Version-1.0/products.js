@@ -327,3 +327,8 @@ document.getElementById("nav2ContentImg1").addEventListener("click",function(){
      //  fav.push(data);
       document.getElementById("cartCounter1").textContent=fav.length;
 });
+
+// Home
+document.getElementById("nav2logo").addEventListener("click",function(){
+  window.location.href="Index.html"
+})

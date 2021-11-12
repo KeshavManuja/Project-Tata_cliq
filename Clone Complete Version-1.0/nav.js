@@ -314,3 +314,28 @@ window.addEventListener('load', (event) => {
    //  fav.push(data);
     document.getElementById("cartCounter1").textContent=fav.length;
 });
+
+
+
+document.getElementById("nav2ContentImg1").addEventListener("click",function(){
+  window.location.href="wishlist.html"
+})
+
+
+document.getElementById("nav2ContentImg2").addEventListener("click",function(){
+  var cartitems=JSON.parse(localStorage.getItem("cartlist")) || []
+  if(cartitems.length==0) {
+    window.location.href="emptycart.html"
+  }
+  else{
+    window.location.href="cart.html"
+  }
+  
+  
+})
+
+// Home
+document.getElementById("logo").addEventListener("click",function(){
+  window.location.href="Index.html"
+})
+  
