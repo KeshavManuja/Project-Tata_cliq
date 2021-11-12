@@ -69,6 +69,11 @@
   margin: auto;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 #popMobile input {
   height: 40px;
   width: 310px;
@@ -99,7 +104,7 @@
   height: 50px;
   width: 340px;
   margin: 50px auto;
-  background-color: rgb(216, 33, 70);
+  background-color: #e4e4e4;
   color: white;
   border-radius: 20px;
   border: none;
@@ -113,5 +118,87 @@
   position: absolute;
   top: 25px;
   right: 35px;
+  cursor: pointer;
+}
+
+#popPlusOtp {
+  font-size: 25px;
+
+  transform: rotate(45deg);
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  cursor: pointer;
+}
+
+#popOtpBtn {
+  height: 50px;
+  width: 340px;
+  margin: 50px auto;
+  background-color: #e4e4e4;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+}
+
+#popOtp {
+  width: 470px;
+  height: 400px;
+
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px 0px;
+  position: relative;
+  display: none;
+}
+
+#otpBoxFlax {
+  display: flex;
+  justify-content: space-between;
+  color: #db2160;
+  font-weight: bold;
+  font-size: 18px;
+  width: 350px;
+  margin: 10px auto 30px auto;
+}
+
+#popMobOtp input,
+#popeMalOtp input {
+  width: 350px;
+  height: 40px;
+  margin-top: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#popMobOtp input::placeholder,
+#popeMalOtp input::placeholder {
+  padding: 10px;
+}
+
+#dispopEmal,
+#dispopMob {
+  margin-bottom: 20px;
+}
+
+.poptAllmost {
+  margin-bottom: 20px;
+}
+
+#popMobileOtp > p,
+#popEmailOtp > p {
+  color: gray;
+  font-size: 17px;
+}
+
+#popEmailOtp {
+  display: none;
+}
+
+#editEmail,
+#editMobile {
   cursor: pointer;
 }
