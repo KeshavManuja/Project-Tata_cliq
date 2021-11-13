@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tatacliq</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Montserrat:wght@200&family=Rubik&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="testCss.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="font-family.css">
+
+    <link rel="stylesheet" href="pop.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <!-- <link rel="stylesheet" href="whishlist.css"> -->
+
+    <style>
+        body {
+            background-color: rgb(236, 236, 236);
+        }
+
+        #wishlist {
+            height: 550px;
+            ;
+            width: 250px;
+            border: 2px solid whitesmoke;
+            margin-left: 12%;
+            border-radius: 5px;
+        }
+
+        #menu {
+            background-color: rgb(249, 249, 249);
+            height: 8%;
+            margin-top: 20px;
+            border-radius: 10px;
+
+        }
+
+        #menu>p {
+            font-weight: bold;
+            font-size: 15px;
+            margin-left: 1px;
+            line-height: 40px;
+            /* margin-bottom: 10px; */
+        }
+
+        #savelist {
+            /* border:2px solid red; */
+            height: 8%;
+            margin-top: 0px;
+            display: flex;
+            text-decoration: none;
+            color: rgb(255, 74, 152);
+            background-color: rgb(255, 255, 255);
+
+
+        }
+
+        #savelist>img {
+            height: 18px;
+            width: 18px;
+            margin-left: 15px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        #savelist>p {
+            margin-top: 100px;
+
+        }
+
+        .common {
+            /* border:2px solid red; */
+            height: 8%;
+            margin-top: px;
+            display: flex;
+            text-decoration: none;
+            color: black;
+            background-color: rgb(255, 255, 255);
+
+
+        }
+
+        /* self profile */
+
+        #address {
+            width: 450px;
+            height: 300px;
+            margin-top: 13px;
+            background-color: rgb(255, 253, 253);
+        }
+
+        #innercircle {
+
+            width: 40%;
+            height: 45%;
+            margin: auto;
+            margin-top: 5%;
+            border-radius: 50000%;
+            background-color: rgb(236, 236, 236);
+
+        }
+
+        .profile {
+            text-align: center;
+            margin-top: 4%;
+            font-size: 17px;
+        }
+
+
+
+
+
+
+        /* js map*/
+        #maindiv1 {
+            background-color: rgb(255, 253, 253);
+            height: 340px;
+            width: 70%;
+            margin-left: 10%;
+            margin-top: 20px;
+            border-radius: 10px;
+            display: flex;
+            /* border: 1px solid; */
+            line-height: 35px;
+
+        }
+
+        #map p {
+            /* border: 1px solid; */
+            font-size: 20px;
+            margin-top: 17px;
+
+        }
+
+        #proi {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+
+    <!-- <link rel="stylesheet" href="home.css"> -->
+</head>
+
+<body>
+
+
+
+
+
+    <div id="signUpBar">
+        <div id="nav1">
+            <div id="luxury"><a href="#">Tata CLiQ Luxury</a></div>
+            <div id="box1">
+                <a href="#" id="">CLiQ Cash</a></li>
+                <a href="#">Gift Card</a></li>
+                <a href="#">CLiQ Care</a></li>
+                <a href="#">Track Orders</a></li>
+                <a href="#" id="dummy">Sign in/Sign Up</a></li>
+                <div id="boxhov">
+                    <p id="arrow"></p>
+                    <ul id="loginList">
+
+                        <li><button id="popDisplay">Login/Register</button></li>
+                        <li><i id="popIcon" class="fal fa-user-circle"></i>My account</li>
+                        <li><i id="popIcon" class="fal fa-briefcase"></i>Order History</li>
+                        <li><i id="popIcon" class="fal fa-bookmark"></i>Saved List</li>
+                        <li><i id="popIcon" class="fal fa-bell"></i>Alerts & Coupon</li>
+                        <li><i id="popIcon" class="fal fa-gift-card"></i>Gift Card</li>
+                        <li><i id="popIcon" class="fal fa-sack-dollar"></i>CLiQ Cash</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="searchBar">
+        <div id="">
+
+            <div id="nav2box1">
+                <div id="logo"><img src="logo.png" alt=""></div>
+                <span id="nav2box1c" class="cat">Categories <i class="far fa-angle-down" id="farc"></i></span>
+
+
+
+
+
+                <span id="nav2box1c" class="brand">Brands <i class="far fa-angle-down" id="farb"></i></span>
+
+            </div>
+            <div id="nav2box2">
+                <div id="search"><input type="text" placeholder="Search" id="beforeEfc"><i class="far fa-search"></i>
+                </div>
+                <div id="icon">
+                    <div id="nav2ContentImg1">
+                        <p id="cartCounter1">0</p>
+                    </div>
+                    <div id="nav2ContentImg2">
+                        <p id="cartCounter2">0</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="blockshowCat">
+            <ul id="listCat">
+
+                <li id="navWomen">Women's Fashion<span><i class="far fa-angle-right" id="navCat1"></i></span></li>
+                <li id="navMen">Men's Fashion<span><i class="far fa-angle-right" id="navCat2"></i></span></li>
+                <li id="navTv">TV & Appliances<span><i class="far fa-angle-right" id="navCat3"></i></span></li>
+                <li id="navMobile">Mobile Phones<span><i class="far fa-angle-right" id="navCat4"></i></span></li>
+                <li id="navElectronics">Electronics<span><i class="far fa-angle-right" id="navCat5"></i></span></li>
+                <li id="navKid">Kid's Fashion<span><i class="far fa-angle-right" id="navCat6"></i></span></li>
+                <li id="navBeauty">Beauty<span><i class="far fa-angle-right" id="navCat7"></i></span></li>
+                <li id="navHome">Home Furnishings<span><i class="far fa-angle-right" id="navCat8"></i></span></li>
+            </ul>
+
+            <div>
+                <table id="cateTable"></table>
+            </div>
+        </div>
+
+
+
+        <div id="blockshow">
+            <ul id="listBrand">
+                <li id="brandTv">TV & Appliances<span><i class="far fa-angle-right" id="navbrn1"></i></span></li>
+                <li id="brandElc">Electronics<span><i class="far fa-angle-right" id="navbrn2"></i></span></li>
+                <li id="brandWomen">Women's Wear<span><i class="far fa-angle-right" id="navbrn3"></i></span></li>
+                <li id="brandMen">Men's Wear<span><i class="far fa-angle-right" id="navbrn4"></i></span></li>
+                <li id="brandFoot">Footwear<span><i class="far fa-angle-right" id="navbrn5"></i></span></li>
+                <li id="brandJwel">Jewellery<span><i class="far fa-angle-right" id="navbrn6"></i></span></li>
+                <li id="brandwatch">Watches & Accessories<span><i class="far fa-angle-right" id="navbrn7"></i></span>
+                </li>
+                <li id="brandKid">Kids<span><i class="far fa-angle-right" id="navbrn8"></i></span></li>
+            </ul>
+            <div>
+                <table id="brandTable"></table>
+            </div>
+            <div id="imgList">
+                <div><img src="https://assets.tatacliq.com/medias/sys_master/images/13957513642014.jpg" alt=""><img
+                        src="https://assets.tatacliq.com/medias/sys_master/images/13957513838622.jpg" alt=""></div>
+                <div><img src="https://assets.tatacliq.com/medias/sys_master/images/26728706506782.jpg" alt=""><img
+                        src="https://assets.tatacliq.com/medias/sys_master/images/13957513838622.jpg" alt=""></div>
+                <div><img src="https://assets.tatacliq.com/medias/sys_master/images/13957513773086.jpg" alt=""><img
+                        src="https://assets.tatacliq.com/medias/sys_master/images/13957513838622.jpg" alt=""></div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- pop login bar  -->
+
+    <div id="popContainer">
+        <div id="popBox">
+            <i id="popPlus" class="fal fa-plus"></i>
+            <div>
+                <h1>Welcome To Tata</h1>
+                <h1>CLiQ</h1>
+            </div>
+            <div id="popMobileDiv">
+                <p>Please enter your mobile number</p>
+                <div id="popMobile"><span>+91</span><span><input type="number" placeholder="Mobile Number"
+                            id="popInpMob"></span></div>
+                <div>
+                    <p id="selectEmail">Use Email Address</p>
+                </div>
+            </div>
+
+
+            <div id="popEmailDiv">
+                <p>Please enter your email address</p>
+                <div id="popEmail"><input type="text" placeholder="E-mail Address" id="popInpEmail"></span></div>
+
+                <div>
+                    <p id="selectMobile">Use Mobile Number</p>
+                </div>
+
+
+            </div>
+
+
+
+            <div id="pTnc">
+                <p>By continue you are agree to our <span id="tnc">Terms of Service</span>&<span id="tnc">Privacy
+                        Policy</span></p>
+            </div>
+
+            <button id="popBtn">Continue</button>
+
+
+        </div>
+
+        <!-- otp box -->
+
+        <div id="popOtp">
+            <i id="popPlusOtp" class="fal fa-plus"></i>
+            <div>
+                <h1 class="poptAllmost">Almost There</h1>
+
+            </div>
+            <div id="popMobileOtp">
+                <p>Please enter the 6 digit OTP that we just sent</p>
+                <p id="dispopMob">on +91</p>
+                <div id="popMobOtp"><input type="number" placeholder="OTP 123456" id="inputmobOtp"></div>
+                <div id="otpBoxFlax">
+                    <p id="editMobile">Edit Number</p>
+                    <p>Resend OTP</p>
+                </div>
+            </div>
+
+
+            <div id="popEmailOtp">
+                <p>Please enter the 6 digit OTP that we just sent</p>
+                <p id="dispopEmal">on </p>
+                <div id="popeMalOtp"><input type="number" placeholder="OTP 123456" id="inputmailOtp"></div>
+                <div id="otpBoxFlax">
+                    <p id="editEmail">Edit Email</p>
+                    <p>Resend OTP</p>
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <button id="popOtpBtn">Continue</button>
+
+
+        </div>
+
+
+    </div>
+
+    <!-------------------- wishlist Static ------------------>
+    <div id="outer" style="display: flex;">
+        <div id="wishlist">
+
+            <div id=menu> MENU </div>
+
+            <a id="savelist" href="">
+                <i class="fas fa-bookmark" id="favourite" style="cursor: pointer; font-size: 20px;"> saved list</i>
+                <!-- <p class = "Red">Saved List</p> -->
+            </a>
+
+            <a class="common" href="">
+                <i class="fas fa-shopping-bag"> Order List</i>
+
+            </a>
+
+            <a class="common" href="">
+                <i class="fas fa-address-book"> Address Book</Address></i>
+            </a>
+
+            <a class="common" href="">
+                <i class="fas fa-tag"> Brands</i>
+            </a>
+
+            <a class="common" href="">
+                <i class="fas fa-credit-card"> Saved Payments</i>
+            </a>
+
+            <a class="common" href="">
+                <i class="fas fa-bell"> Alerts & Coupons</i>
+            </a>
+
+            <a class="common" href="">
+                <i class="fas fa-gifts"> Gift Cards</i>
+            </a>
+
+            <a class="common" href="">
+                <i class="fas fa-rupee-sign"> CLIQ Cash</i>
+            </a>
+
+            <a class="common" href="">
+                <i class="fas fa-address-book"> Manage Notifications</i>
+
+            </a>
+
+            <a class="common" href="">
+                <i class="fas fa-cogs"> Profile</i>
+            </a>
+
+        </div>
+
+        <div id="map"></div>
+
+        <!-- -------conataint will be change---------- -->
+        <div id="address">
+            <div id="innercircle"></div>
+            <p class="profile">praful.deore.7583@gmail.com</p>
+            <p class="profile">9764604976</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+<!-- --------------------------Wishlist mapping------------------------ -->
+
+<script>
+    // Parsing data to localstorage
+    // var data1=localStorage.setItem("try1",JSON.stringify(data1));
+
+    // Accesing data from localstorage
+    var data2 = JSON.parse(localStorage.getItem("favlist"));
+
+    // Mapping each cart item
+
+    data2.map(function (item) {
+
+        // Creating maindiv for each entry
+        var body = document.querySelector("body");
+        var maindiv = document.createElement("div");
+        maindiv.setAttribute("id", "maindiv1");
+
+        //  image
+        var image = document.createElement("div")
+        var pic = document.createElement("img")
+        pic.setAttribute("src", item.img_url)
+        //Appending in div 
+        image.append(pic)
+        image.style.width = "35%";
+        //    image.style.height="40%";
+        pic.setAttribute("id", "proi")
+        image.style.overflow = "hidden"
+        //  div for product details
+        var text = document.createElement("div")
+        // Title 
+        var title = document.createElement("p")
+        title.textContent = item.name
+        // Price of product
+        var price = document.createElement("p")
+        price.textContent = item.price;
+
+
+
+        title.append(price)
+
+
+        maindiv.append(image, title)
+
+
+        var outerdiv = document.getElementById("map")
+        outerdiv.append(maindiv)
+
+
+
+
+
+
+    })
+</script>
+<script src="nav.js"></script>
+<script src="brands.js"></script>
+<script src="pop.js"></script>

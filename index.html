@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatacliq-Clone</title>
+    <link rel="stylesheet" href="testCss.css">
+    <link rel="stylesheet" href="pop.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="pop.css">
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+
+
+
+
+    <div id="signUpBar">
+        <div id="nav1">
+            <div id="luxury"><a href="#">Tata CLiQ Luxury</a></div>
+            <div id="box1">
+                <a href="#" id="">CLiQ Cash</a></li>
+                <a href="#">Gift Card</a></li>
+                <a href="#">CLiQ Care</a></li>
+                <a href="#">Track Orders</a></li>
+                <a href="#" id="dummy">Sign in/Sign Up</a></li>
+                <div id="boxhov">
+                    <p id="arrow"></p>
+                    <ul id="loginList">
+
+                        <li><button id="popDisplay">Login/Register</button></li>
+                        <li><i id="popIcon" class="fal fa-user-circle"></i>My account</li>
+                        <li><i id="popIcon" class="fal fa-briefcase"></i>Order History</li>
+                        <li><i id="popIcon" class="fal fa-bookmark"></i>Saved List</li>
+                        <li><i id="popIcon" class="fal fa-bell"></i>Alerts & Coupon</li>
+                        <li><i id="popIcon" class="fal fa-gift-card"></i>Gift Card</li>
+                        <li><i id="popIcon" class="fal fa-sack-dollar"></i>CLiQ Cash</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="searchBar">
+        <div id="">
+
+            <div id="nav2box1">
+                <div id="logo"><img src="logo.png" alt=""></div>
+                <span id="nav2box1c" class="cat">Categories <i class="far fa-angle-down" id="farc"></i></span>
+
+
+
+
+
+                <span id="nav2box1c" class="brand">Brands <i class="far fa-angle-down" id="farb"></i></span>
+
+            </div>
+            <div id="nav2box2">
+                <div id="search"><input type="text" placeholder="Search" id="beforeEfc"><i class="far fa-search"></i>
+                </div>
+                <div id="icon">
+                    <div id="nav2ContentImg1">
+                        <p id="cartCounter1">0</p>
+                    </div>
+                    <div id="nav2ContentImg2">
+                        <p id="cartCounter2">0</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="blockshowCat">
+            <ul id="listCat">
+
+                <li id="navWomen">Women's Fashion<span><i class="far fa-angle-right" id="navCat1"></i></span></li>
+                <li id="navMen">Men's Fashion<span><i class="far fa-angle-right" id="navCat2"></i></span></li>
+                <li id="navTv">TV & Appliances<span><i class="far fa-angle-right" id="navCat3"></i></span></li>
+                <li id="navMobile">Mobile Phones<span><i class="far fa-angle-right" id="navCat4"></i></span></li>
+                <li id="navElectronics">Electronics<span><i class="far fa-angle-right" id="navCat5"></i></span></li>
+                <li id="navKid">Kid's Fashion<span><i class="far fa-angle-right" id="navCat6"></i></span></li>
+                <li id="navBeauty">Beauty<span><i class="far fa-angle-right" id="navCat7"></i></span></li>
+                <li id="navHome">Home Furnishings<span><i class="far fa-angle-right" id="navCat8"></i></span></li>
+            </ul>
+
+            <div>
+                <table id="cateTable"></table>
+            </div>
+        </div>
+
+
+
+        <div id="blockshow">
+            <ul id="listBrand">
+                <li id="brandTv">TV & Appliances<span><i class="far fa-angle-right" id="navbrn1"></i></span></li>
+                <li id="brandElc">Electronics<span><i class="far fa-angle-right" id="navbrn2"></i></span></li>
+                <li id="brandWomen">Women's Wear<span><i class="far fa-angle-right" id="navbrn3"></i></span></li>
+                <li id="brandMen">Men's Wear<span><i class="far fa-angle-right" id="navbrn4"></i></span></li>
+                <li id="brandFoot">Footwear<span><i class="far fa-angle-right" id="navbrn5"></i></span></li>
+                <li id="brandJwel">Jewellery<span><i class="far fa-angle-right" id="navbrn6"></i></span></li>
+                <li id="brandwatch">Watches & Accessories<span><i class="far fa-angle-right" id="navbrn7"></i></span>
+                </li>
+                <li id="brandKid">Kids<span><i class="far fa-angle-right" id="navbrn8"></i></span></li>
+            </ul>
+            <div>
+                <table id="brandTable"></table>
+            </div>
+            <div id="imgList">
+                <div><img src="https://assets.tatacliq.com/medias/sys_master/images/13957513642014.jpg" alt=""><img
+                        src="https://assets.tatacliq.com/medias/sys_master/images/13957513838622.jpg" alt=""></div>
+                <div><img src="https://assets.tatacliq.com/medias/sys_master/images/26728706506782.jpg" alt=""><img
+                        src="https://assets.tatacliq.com/medias/sys_master/images/13957513838622.jpg" alt=""></div>
+                <div><img src="https://assets.tatacliq.com/medias/sys_master/images/13957513773086.jpg" alt=""><img
+                        src="https://assets.tatacliq.com/medias/sys_master/images/13957513838622.jpg" alt=""></div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- pop login bar  -->
+
+    <div id="popContainer">
+        <div id="popBox">
+            <i id="popPlus" class="fal fa-plus"></i>
+            <div>
+                <h1 class="popTitle">Welcome To Tata</h1>
+                <h1 class="popTitle">CLiQ</h1>
+            </div>
+            <div id="popMobileDiv">
+                <p>Please enter your mobile number</p>
+                <div id="popMobile"><span>+91</span><span><input type="number" placeholder="Mobile Number"
+                            id="popInpMob"></span></div>
+                <div>
+                    <p id="selectEmail">Use Email Address</p>
+                </div>
+            </div>
+
+
+            <div id="popEmailDiv">
+                <p>Please enter your email address</p>
+                <div id="popEmail"><input type="text" placeholder="E-mail Address" id="popInpEmail"></span></div>
+
+                <div>
+                    <p id="selectMobile">Use Mobile Number</p>
+                </div>
+
+
+            </div>
+
+
+
+            <div id="pTnc">
+                <p>By continue you are agree to our <span id="tnc">Terms of Service</span>&<span id="tnc">Privacy
+                        Policy</span></p>
+            </div>
+
+            <button id="popBtn">Continue</button>
+
+
+        </div>
+
+        <!-- otp box -->
+
+        <div id="popOtp">
+            <i id="popPlusOtp" class="fal fa-plus"></i>
+            <div>
+                <h1 class="poptAllmost">Almost There</h1>
+
+            </div>
+            <div id="popMobileOtp">
+                <p>Please enter the 6 digit OTP that we just sent</p>
+                <p id="dispopMob">on +91</p>
+                <div id="popMobOtp"><input type="number" placeholder="OTP 123456" id="inputmobOtp"></div>
+                <div id="otpBoxFlax">
+                    <p id="editMobile">Edit Number</p>
+                    <p>Resend OTP</p>
+                </div>
+            </div>
+
+
+            <div id="popEmailOtp">
+                <p>Please enter the 6 digit OTP that we just sent</p>
+                <p id="dispopEmal">on </p>
+                <div id="popeMalOtp"><input type="number" placeholder="OTP 123456" id="inputmailOtp"></div>
+                <div id="otpBoxFlax">
+                    <p id="editEmail">Edit Email</p>
+                    <p>Resend OTP</p>
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <button id="popOtpBtn">Continue</button>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div id="outtest box">
+        <!-- SLiding images -F2-->
+        <div class="mainbox">
+            <img id="sliding1" src="https://assets.tatacliq.com/medias/sys_master/images/31653739135006.jpg">
+        </div>
+
+
+
+        <!--  F3-->
+        <div id="container">
+            <a href="">
+                <div class="Himanshu">
+                    <img height="100%" width="100%"
+                        src="https://assets.tatacliq.com/medias/sys_master/images/31648118734878.jpg" />
+                </div>
+            </a>
+
+            <a href="">
+                <div class="Himanshu">
+                    <img height="100%" width="100%"
+                        src="https://assets.tatacliq.com/medias/sys_master/images/31465475080222.gif" />
+                </div>
+            </a>
+
+            <a href="">
+                <div class="Himanshu">
+                    <img height="100%" width="100%"
+                        src="https://assets.tatacliq.com/medias/sys_master/images/31465475112990.gif" />
+                </div>
+            </a>
+
+            <a href="">
+                <div class="Himanshu">
+                    <img height="100%" width="100%"
+                        src="https://assets.tatacliq.com/medias/sys_master/images/31465475145758.gif" />
+                </div>
+            </a>
+
+            <a href="">
+                <div class="Himanshu">
+                    <img height="100%" width="100%"
+                        src="https://assets.tatacliq.com/medias/sys_master/images/31551541608478.gif" />
+                </div>
+            </a>
+
+            <a href="">
+                <div class="Himanshu">
+                    <img height="100%" width="100%"
+                        src="https://assets.tatacliq.com/medias/sys_master/images/31465475211294.gif" />
+                </div>
+            </a>
+
+
+            <a href="">
+                <div class="Himanshu">
+                    <img height="100%" width="100%"
+                        src="https://assets.tatacliq.com/medias/sys_master/images/31551541575710.gif" />
+                </div>
+            </a>
+
+            <a href="">
+                <div class="Himanshu">
+                    <img height="100%" width="100%"
+                        src="https://assets.tatacliq.com/medias/sys_master/images/31465475276830.gif" />
+                </div>
+            </a>
+
+            <a href="">
+                <div class="Himanshu">
+                    <img height="100%" width="100%"
+                        src="https://assets.tatacliq.com/medias/sys_master/images/31496695152670.gif" />
+                </div>
+            </a>
+
+        </div>
+        <a href="">
+            <div id="axis">
+                <img height="100%" width="100%"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/31615563497502.jpg" />
+            </div>
+        </a>
+
+        <!-- Deepak -->
+        <div id="box">
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/31653735137310.jpg" alt="No Image">
+        </div>
+
+        <div id="box2">
+            <div id="first"><img class="hover1"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/31581270540318.png" alt="No image"></div>
+            <div id="second"><img class="hover1"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/31581270605854.png" alt="No image"></div>
+        </div>
+
+
+        <div id="box3"><img src="https://assets.tatacliq.com/medias/sys_master/images/31628697927710.png"
+                alt="No image"></div>
+        <div id="box4"><img src="https://assets.tatacliq.com/medias/sys_master/images/31655829176350.jpg"
+                alt="No image"></div>
+
+
+        <div id="box5">
+            <div id="fir"><img class="hover1"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/31655829307422.jpg" alt="No image"></div>
+            <div id="sec"><img class="hover1"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/31655829438494.jpg" alt="No image"></div>
+            <div id="thi"><img class="hover1"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/31655829504030.jpg" alt="No image"></div>
+        </div>
+
+
+        <div id="box6"><img src="https://assets.tatacliq.com/medias/sys_master/images/31655829241886.jpg"
+                alt="No image"></div>
+        <div id="box7"><img src="https://assets.tatacliq.com/medias/sys_master/images/31446637051934.jpg"
+                alt="No image"></div>
+
+
+
+
+        <!-- Feed -4-Praful -->
+        <div class="container1">
+            <div class="i" id="leftimage">
+                <img src="https://assets.tatacliq.com/medias/sys_master/images/31655838875678.jpg" alt="puma shoes" />
+            </div>
+            <div class="i" id="rightimage">
+                <img src="https://assets.tatacliq.com/medias/sys_master/images/31653745262622.jpg" alt="girl in blue" />
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="j" id="img1">
+                <img src="https://assets.tatacliq.com/medias/sys_master/images/31562214342686.jpg" alt="mixer" />
+            </div>
+            <div class="j" id="img2">
+                <img src="https://assets.tatacliq.com/medias/sys_master/images/31562214408222.jpg" alt="induction" />
+            </div>
+            <div class="j" id="img3">
+                <img src="https://assets.tatacliq.com/medias/sys_master/images/31562214473758.jpg" alt="micro own" />
+            </div>
+            <div class="j" id="img4">
+                <img src="https://assets.tatacliq.com/medias/sys_master/images/31562214539294.jpg"
+                    alt="toaster grill" />
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    function first() {
+        var image = document.getElementById("sliding1")
+        image.setAttribute("src", ("https://assets.tatacliq.com/medias/sys_master/images/31655829798942.jpg"))
+    }
+
+    function second() {
+        var image = document.getElementById("sliding1")
+        image.setAttribute("src", "https://assets.tatacliq.com/medias/sys_master/images/31653739069470.jpg")
+    }
+
+    function third() {
+        var image = document.getElementById("sliding1")
+        image.setAttribute("src", "https://assets.tatacliq.com/medias/sys_master/images/31653739003934.jpg")
+    }
+
+    function fourth() {
+        var image = document.getElementById("sliding1")
+        image.setAttribute("src", "https://assets.tatacliq.com/medias/sys_master/images/31653739790366.jpg")
+    }
+
+    function fifth() {
+        var image = document.getElementById("sliding1")
+        image.setAttribute("src", "https://assets.tatacliq.com/medias/sys_master/images/31653739659294.jpg")
+    }
+
+    function sixth() {
+        var image = document.getElementById("sliding1")
+        image.setAttribute("src", "https://assets.tatacliq.com/medias/sys_master/images/31653739135006.jpg")
+    }
+
+    setInterval(first, 2000)
+    setInterval(second, 4000)
+    setInterval(third, 6000)
+    setInterval(fourth, 8000)
+    setInterval(fifth, 10000)
+    setInterval(sixth, 12000)
+</script>
+
+<script src="nav.js"></script>
+<script src="brands.js"></script>
+<script src="pop.js"></script>
