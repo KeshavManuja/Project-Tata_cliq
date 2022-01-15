@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: teal;
+        }
+        #change{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-image: url('https://cdn-icons.flaticon.com/png/512/3106/premium/3106690.png?token=exp=1636015907~hmac=d0eec738e5ae0d3c2f2a7fb3da13e742');
+            background-size: cover;
+            background-color: teal;
+            
+        }   
+    </style>
+</head>
+<body>
+    <button id="btn"></button>
+</body>
+</html>
+
+<script>
+    document.getElementById("btn").addEventListener("click",hy)
+
+    function hy() {
+        document.getElementById("btn").setAttribute("id","change")
+    }
+</script>

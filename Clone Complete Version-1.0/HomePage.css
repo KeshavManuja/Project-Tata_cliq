@@ -1,0 +1,256 @@
+.mainbox {
+    position: relative;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(236, 236, 236)
+}
+
+#sliding1 {
+    width: 100%;
+    height: auto;
+
+}
+
+#container {
+    display: flex;
+    height: auto;
+    background-color: rgb(236, 236, 236);
+    margin-top: -8%;
+    justify-content: space-evenly;
+
+
+
+
+
+
+}
+
+.Himanshu {
+    background-color: lightgray;
+    height: 130px;
+    width: 120px;
+    margin-left: 40px;
+    margin-top: 150px;
+
+}
+
+#axis {
+
+    height: 120px;
+    width: 1200px;
+    margin: auto;
+    margin-top: 2%;
+}
+
+
+.container1 {
+    display: flex;
+    width: 80%;
+    height: 410px;
+    justify-content: center;
+    border: 0px solid black;
+    margin: auto;
+    margin-top: 5%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#leftimage {
+    width: 40%;
+    height: 80%;
+    background-color: green;
+    border-radius: 5px;
+}
+
+#rightimage {
+    width: 40%;
+    height: 80%;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.container1 img {
+    width: 100%;
+    height: 100%;
+    max-width: 110%;
+    min-width: 60%;
+    transition: 200ms;
+    border-radius: 3%;
+
+}
+
+.i img:hover {
+    height: 105%;
+    border-radius: 3%;
+    width: 105%;
+    transition: 200ms;
+
+    transform: scale(1.2);
+}
+
+/* ----------------------------------------------> */
+/* container-2 */
+.container2 {
+    display: flex;
+    width: 80%;
+    height: 410px;
+    justify-content: center;
+    border: 0px solid black;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.j {
+    width: 20%;
+    height: 80%;
+    background-color: green;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.container2 img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-width: 60%;
+    transition: 200ms;
+    border-radius: 3%;
+}
+
+.container2 img:hover {
+    width: 110%;
+    height: 110%;
+    transition: 300ms;
+    border-radius: 4%;
+    transform: scale(1.1);
+}
+
+#box {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#box>img {
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    cursor: pointer;
+}
+
+#box3 {
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+#box4 {
+    margin-left: 12%;
+    margin-bottom: 60px;
+}
+
+#box5 {
+    display: flex;
+    gap: 50px;
+
+    margin-left: 17%;
+    margin-top: 3%;
+    height: 350px;
+    width: 1300px;
+}
+
+img.hover1:hover {
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+#box6 {
+    margin-left: 12%;
+    margin-bottom: 3%;
+}
+
+#box7 {
+    margin-left: 12%;
+    margin-bottom: 3%;
+}
+
+#fir {
+    height: 300px;
+    width: 300px;
+    margin-right: 10px;
+
+}
+
+#fir>img {
+    height: 100%;
+    width: 100%;
+
+}
+
+
+#sec {
+    height: 300px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+#sec>img {
+    height: 100%;
+    width: 100%;
+
+}
+
+#thi {
+    height: 300px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+#thi>img {
+    height: 100%;
+    width: 100%;
+
+}
+
+
+#box2 {
+    display: flex;
+    gap: 40px;
+    ;
+
+    margin: auto;
+    height: 400px;
+    width: 1200px;
+}
+
+#first {
+    width: 550px;
+    height: 350px;
+}
+
+#first>img {
+    height: 100%;
+    width: 100%;
+}
+
+#second {
+    width: 550px;
+    height: 350px;
+}
+
+#second>img {
+    height: 100%;
+    width: 100%;
+}
