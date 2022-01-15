@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300&display=swap");
+* {
+  margin: 0px;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+}
+
+#signUpBar {
+  background-color: #212121;
+
+  height: 30px;
+  /* overflow: auto; */
+}
+#nav1 {
+  background-color: black;
+  width: 83%;
+  float: right;
+  height: 30px;
+  line-height: 30px;
+}
+#searchBar {
+  background-color: #212121;
+  margin-top: 0px;
+  display: block;
+  width: 100%;
+
+  /* overflow: auto; */
+
+  position: relative;
+  /* padding-bottom: 10px; */
+  position: sticky;
+  top: 0px;
+}
+#nav1 a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 20px;
+}
+#luxury,
+#box1 {
+  display: inline-block;
+}
+#box1 {
+  display: flex;
+  float: right;
+  margin-right: 10px;
+}
+#logo img {
+  width: 70px;
+}
+#logo {
+  display: inline-block;
+  padding: 10px 70px 10px 60px;
+}
+#nav2box1 {
+  display: flex;
+
+  color: white;
+}
+#nav2box2 {
+  margin-top: auto;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#nav2box {
+  margin: 0px 0px;
+}
+#search {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #212121;
+  /* background-color: white; */
+  border-bottom: 1px solid white;
+  /* margin-bottom: 0;
+    padding-bottom: 0; */
+}
+#search #beforeEfc {
+  background-color: #212121;
+  border: none;
+
+  /* height: 50px; */
+  /* width: 500px; */
+}
+#search #onEffet {
+  background-color: #212121;
+  border: none;
+  background-color: white;
+  height: 50px;
+  width: 500px;
+}
+#times {
+  background-color: white;
+}
+
+#nav2ContentImg1 {
+  background-image: url("bookmark.png");
+  margin: 0px 20px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+
+  height: 50px;
+  width: 50px;
+
+  position: relative;
+}
+#nav2ContentImg2 {
+  background-image: url("bag.png");
+  margin: 0px 30px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  height: 50px;
+  width: 50px;
+
+  position: relative;
+}
+#icon {
+  /* display: inline-block; */
+  float: right;
+  display: flex;
+}
+
+#cartCounter1,
+#cartCounter2 {
+  padding: 0px 5px;
+  position: absolute;
+  right: 15px;
+  background-color: #ff1744;
+  border-radius: 50%;
+}
+
+#dummytext {
+  line-height: 50px;
+  /* color: white; */
+}
+#nav2box1c {
+  margin: 0px;
+  cursor: pointer;
+  /* padding: 30px 0px; */
+  /* height: 30px; */
+}
+#nav2box1 span {
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.brand:hover {
+  background-color: white;
+  color: black;
+}
+
+.brand:hover + #listBrand,
+#listBrand:hover {
+  display: block;
+}
+
+#loginList {
+  margin-top: 40px;
+  background-color: white;
+  position: absolute;
+  padding: 10px;
+  /* margin-left: 405px; */
+  z-index: 3;
+  /* display: none; */
+}
+#loginList li {
+  list-style: none;
+  background-color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#popDisplay {
+  background-color: #ff1744;
+  padding: 10px 25px;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#popIcon {
+  margin-right: 10px;
+}
+
+#arrow {
+  margin-top: 33px;
+  background-color: white;
+  content: "   ";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  z-index: 3;
+  border: none;
+  margin-left: 130px;
+  transform: rotate(225deg);
+  /* display: none; */
+}
+
+#boxhov {
+  margin-top: -10px;
+  width: 300px;
+  /* padding: 50px; */
+  position: absolute;
+  margin-left: 405px;
+  z-index: 3;
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#dummy:hover + #boxhov,
+#boxhov:hover {
+  display: block;
+}
+
+#blockshow {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  margin-left: 200px;
+  display: none;
+  /* position: sticky; */
+  top: 63px;
+  z-index: 1;
+
+  background-color: white;
+  width: fit-content;
+  height: 485px;
+  cursor: pointer;
+}
+#brandTable {
+  margin-left: 25px;
+}
+
+#brandTable tr td a,
+#brandTable tr td {
+  color: gray;
+  padding: 5px 5px;
+  margin-right: 40px;
+  text-decoration: none;
+  width: 250px;
+  font-size: 15px;
+}
+
+#brandTable tr th,
+#brandTable tr th a {
+  color: black;
+  padding: 5px 5px;
+  /* margin-right: 4px; */
+  text-decoration: none;
+  width: 250px;
+  text-align: left;
+}
+#brandTable tr td a:hover {
+  color: #ff1744;
+}
+
+#blockshow #listBrand li {
+  padding: 19px 0px 19px 19px;
+  list-style: none;
+  width: 185px;
+  border-bottom: 1px solid gray;
+}
+#listBrand li {
+  color: gray;
+  font-weight: bold;
+}
+#listBrand li:hover {
+  color: black;
+}
+
+#blockshow #listBrand {
+  list-style: none;
+  padding-left: 0px;
+}
+#imgList img {
+  margin: 20px;
+
+  border-radius: 50%;
+}
+#imgList {
+  background-color: whitesmoke;
+  width: fit-content;
+}
+
+#blockshowCat {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  margin-left: 200px;
+  display: none;
+
+  background-color: white;
+  top: 63px;
+  /* position: sticky; */
+  /* background-color: #fff; */
+  z-index: 3;
+  width: fit-content;
+  height: 485px;
+  cursor: pointer;
+}
+
+#listCat li {
+  padding: 18px 0px 18px 19px;
+  list-style: none;
+  width: 185px;
+  border-bottom: 1px solid gray;
+  color: gray;
+  font-weight: bold;
+  /* background-color: white; */
+}
+#listCat li:hover {
+  color: black;
+}
+#listCat {
+  padding-left: 0px;
+}
+#cateTable {
+  margin-left: 30px;
+  width: 816px;
+}
+#cateTable tr td a {
+  text-decoration: none;
+  color: gray;
+  margin-right: 30px;
+  background-color: white;
+  font-size: 14px;
+}
+#cateTable tr th a {
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  margin-right: 30px;
+  background-color: white;
+  font-size: 15px;
+}
+#cateTable tr th {
+  text-align: left;
+}
+#cateTable tr td {
+  padding: 5px;
+  width: 200px;
+}
+
+#cateTable tr td a:hover {
+  color: #ff1744;
+}
+
+#nav2box1 #farc,
+#farb {
+  margin-left: 5px;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+span .fa-angle-right {
+  float: right;
+  display: none;
+  font-size: 20px;
+}
+
+#times {
+  background-color: #fff;
+  height: 52px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: black;
+  padding: 0px 15px;
+  vertical-align: bottom;
+}

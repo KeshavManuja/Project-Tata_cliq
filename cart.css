@@ -1,0 +1,181 @@
+body{
+    background-color: rgb(235,235,235)
+}
+#upperpart{
+    background-color: white;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#upperpart>h1{
+   
+    width: 100px;
+}
+#upperpart>h3{
+    display: inline-block;
+    margin-left: 60%;
+}
+#upperpart>p{
+    display: inline-block;
+    margin-left: 13px;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 200;
+}
+
+#upperpart+p{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+#maindiv{
+    background-color: white;
+    height: 340px;
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+
+    line-height: 35px;
+    }
+
+
+
+
+#totalbox{
+    background-color:rgb(235,235,235);
+    height: 400px;
+    width: 30%;
+    margin-top: 20px;
+    line-height: 40px;
+    margin-left: -200px;
+    
+    
+    
+    
+}
+#ee{
+  display: flex;
+  }
+#coupon{
+    background-color: white;
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    padding: 2%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+    }
+#coupon>img{
+    margin-right: 4%;
+}
+#coupon>p{
+    margin-left: 25%;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#pricing{
+    background-color: white;
+    width: 90%;
+    height: 400px;
+    margin-top: 1%;
+    padding: 10px;
+}
+#remove{
+    display: inline-block;
+    margin-left:15% ;
+    color: gray;
+    font: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#continueshop{
+    margin-left: 37%;
+    margin-top:20px ;
+    border:2px solid black;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: rgb(235,235,235);
+    width: 200px;
+    cursor: pointer;
+    padding: 10px;
+}
+#text{
+    width: 600px;
+   font-size: 18px;
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    width: 100%;
+}
+#bagtotal{
+    display: flex;
+    justify-content: space-between;
+}
+#shippingcharage{
+    display: flex;
+    justify-content:space-between
+}
+#Free{
+    display: inline-block;
+    font-size: 20px;
+    color: green;
+    
+
+}
+#codebox{
+    width: 93%;
+    height: 30px;
+    margin-top: 10px;
+    color: hotpink;
+}
+#coupon+p{
+    cursor: pointer;
+}
+.totalamount{
+    display: flex;
+    justify-content: space-between;
+}
+#Checkout{
+    margin-right:10%;
+    width: 160px;
+    border-radius: 35px;
+    height: 50px;
+    margin-top: 2%;
+    background-color: rgb(255,23,68);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+     
+}
+#flex{
+    display: flex;
+    width: 300px;
+    align-items: center;
+}
+#flex>p{
+    margin-left: 20px;
+}
+#bagsubtotal{
+    display: flex;
+    justify-content: space-between;
+}
+#productdiscount{
+    display: flex;
+    justify-content: space-between;
+}
+#contain{
+    display: flex;
+    flex-direction: column;
+    
+}
+#wishlistimg{
+    width: 10%;
+    display: inline-block;
+    cursor: pointer;
+}
